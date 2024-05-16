@@ -1,0 +1,9 @@
+15:27:39 **** Build of configuration Debug for project xgpiops_polled_example_2_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50547 C:/vi/z702/12121/export/12121/12121.xpfm standalone_domain C:/vi/z702/xgpiops_polled_example_2_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702/12121/export/12121/12121.xpfm --sys_config 12121 --bif C:/vi/z702/xgpiops_polled_example_2_system/Debug/system.bif --no_bitstream --elf C:/vi/z702/xgpiops_polled_example_2/Debug/xgpiops_polled_example_2.elf,ps7_cortexa9_0
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/vi/z702/xgpiops_polled_example_2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:27:45 Build Finished (took 5s.698ms)
+

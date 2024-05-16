@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Apr 24 08:51:15 2024
+# Process ID: 15648
+# Current directory: C:/Vulcan/Design_Tool/Vivado/VC707/fifo/fifo.runs/asfifo_wr256x8_rd256x8_synth_1
+# Command line: vivado.exe -log asfifo_wr256x8_rd256x8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source asfifo_wr256x8_rd256x8.tcl
+# Log file: C:/Vulcan/Design_Tool/Vivado/VC707/fifo/fifo.runs/asfifo_wr256x8_rd256x8_synth_1/asfifo_wr256x8_rd256x8.vds
+# Journal file: C:/Vulcan/Design_Tool/Vivado/VC707/fifo/fifo.runs/asfifo_wr256x8_rd256x8_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source asfifo_wr256x8_rd256x8.tcl -notrace

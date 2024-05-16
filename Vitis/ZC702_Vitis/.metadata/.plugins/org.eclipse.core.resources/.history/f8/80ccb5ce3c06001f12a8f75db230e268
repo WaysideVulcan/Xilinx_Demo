@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xgpiops.h"
+#include "xgpio.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xscugic.h"
+#include "sleep.h"
+
+#define GPIO_DEVICE_ID		XPAR_XGPIOPS_0_DEVICE_ID
+#define AXI_GPIO__ID		XPAR_GPIO_0_DEVICE_ID
+#define GPIO_CHANNEL1		1
+
+XGpioPs Gpio;
+XGpioPs_Config *ConfigPtr;
+
+XGpio AXI_Gpio;
+
+int main()
+{
+	u32 data = 0;
+
+	printf("AXI_GPIO Test");
+
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	XGpio_Initialize(&AXI_Gpio, AXI_GPIO__ID);
+
+	XGpioPs_SetDirectionPin(&Gpio, 10 , 1);
+	XGpioPs_SetOutputEnablePin(&Gpio, 10 , 1);
+
+	XGpio_SetDataDirection(&AXI_Gpio, GPIO_CHANNEL, 0x00000001);
+
+	while(1){
+		if(XGpio_DiscreteRead(&AXI_Gpio, GPIO_CHANNEL) == 0);
+			data = ~data;
+		XGpioPs_WritePin(&Gpio, 10 , data);
+	}
+
+    return 0;
+}

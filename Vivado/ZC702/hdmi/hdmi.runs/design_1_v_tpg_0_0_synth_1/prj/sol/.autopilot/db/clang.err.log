@@ -1,0 +1,16 @@
+C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:2089:38: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_PARTITION variable=&pixbuf_y complete dim=0
+                                     ^
+C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:2102:38: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_PARTITION variable=&pixbuf_cb complete dim=0
+                                     ^
+C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:2103:38: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_PARTITION variable=&pixbuf_cr complete dim=0
+                                     ^
+C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:2297:38: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_PARTITION variable=&pixbuf_y complete dim=0
+                                     ^
+C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:2332:38: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_PARTITION variable=&pixbuf_c complete dim=0
+                                     ^
+5 warnings generated.

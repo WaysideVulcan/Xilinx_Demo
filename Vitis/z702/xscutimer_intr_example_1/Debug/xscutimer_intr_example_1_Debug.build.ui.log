@@ -1,0 +1,25 @@
+2024-01-24T11:17:12.775480600255-11:17:12 **** Build of configuration Debug for project xscutimer_intr_example_1 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/xscutimer_intr_example.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xscutimer_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/timer/export/timer/sw/timer/standalone_domain/bspinclude/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.o" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+000-'Finished building: ../src/xscutimer_intr_example.c'
+000-' '
+000-'Building target: xscutimer_intr_example_1.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702/timer/export/timer/sw/timer/standalone_domain/bsplib/lib -o "xscutimer_intr_example_1.elf"  ./src/xscutimer_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: xscutimer_intr_example_1.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size xscutimer_intr_example_1.elf  |tee "xscutimer_intr_example_1.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  27973	   1928	  22632	  52533	   cd35	xscutimer_intr_example_1.elf
+000-'Finished building: xscutimer_intr_example_1.elf.size'
+000-' '
+00255-
+11:17:13 Build Finished (took 699ms)
+

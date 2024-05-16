@@ -1,0 +1,51 @@
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+#include "xil_mmu.h"
+#include "stdio.h"
+#include "axiled.h"
+
+#define SHARE_BASE 			 0xffff0000					  //OCM First Address
+
+#define INTC_DEVICE_ID		 XPAR_SCUGIC_SINGLE_DEVICE_ID //intr ID
+#define CPU0_ID				 XSCUGIC_SPI_CPU0_MASK		  //CPU0 ID
+#define SOFT_INTR_ID_TO_CPU0 0							  //intr to CPU0 ID
+#define SOFT_INTR_ID_TO_CPU1 1							  //intr to CPU1 ID
+
+#define LED_IP_BASEADDR		XPAR_AXILED_0_DEVICE_ID
+#define LED_IP_REG0 		AXILED_S00_AXI_SLV_REG0_OFFSET
+#define LED_IP_REG1 		AXILED_S00_AXI_SLV_REG1_OFFSET
+
+void cpu1_intr_init(XScuGic *intc_ptr);
+void soft_intr_handler(void *CallbackRef);
+
+XScuGic Intc;
+int soft_intr_flag = 0;
+int freq_gear;
+
+int main()
+{
+    int freq_flag = 0;
+
+	Xil_SetTlbAttributes(SHARE_BASE,0x14de2);
+	cpu1_intr_init(&Intc);
+
+    while(1){
+    	if(freq_flag == 0){
+    		AXILED_mWriteReg(LED_IP_BASEADDR, LED_IP_REG1, 0x000000ff);
+    		freq_flag = 1;
+    	}
+    	else{
+    		AXILED_mWriteReg(LED_IP_BASEADDR, LED_IP_REG1, 0x0000002f);
+    		freq_flag = 0;
+    	}
+
+
+    AXILED_mWriteReg(LED_IP_BASEADDR, LED_IP_REG0, 0x00000001);
+    sleep(5);
+    AXILED_mWriteReg(LED_IP_BASEADDR, LED_IP_REG0, 0x00000000);
+    sleep(1);
+    }
+    return 0;
+}

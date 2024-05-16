@@ -1,0 +1,9 @@
+10:46:14 DEBUG : Logs will be stored at 'C:/Vulcan/Design_Tool/Vitis/z702/IDE.log'.
+10:46:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Vulcan\Design_Tool\Vitis\z702\temp_xsdb_launch_script.tcl
+10:46:15 INFO  : Registering command handlers for Vitis TCF services
+10:46:16 INFO  : Platform repository initialization has completed.
+10:46:17 INFO  : XSCT server has started successfully.
+10:46:17 INFO  : plnx-install-location is set to ''
+10:46:19 INFO  : Successfully done setting XSCT server connection channel  
+10:46:19 INFO  : Successfully done query RDI_DATADIR 
+10:46:19 INFO  : Successfully done setting workspace for the tool. 

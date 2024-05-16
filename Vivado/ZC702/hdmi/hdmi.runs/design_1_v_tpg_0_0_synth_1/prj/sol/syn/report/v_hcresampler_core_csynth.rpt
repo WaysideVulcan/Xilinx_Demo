@@ -1,0 +1,217 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_hcresampler_core'
+================================================================
+* Date:           Fri Mar  1 09:43:18 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.73 ns|  5.253 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+-----------+-----------+-----+------------+---------+
+    |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |     max    |    min    |    max    | min |     max    |   Type  |
+    +---------+------------+-----------+-----------+-----+------------+---------+
+    |        2|  1073971194|  13.468 ns|  7.232 sec|    2|  1073971194|       no|
+    +---------+------------+-----------+-----------+-----+------------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------+-----------------------------------------------+---------+---------+-----------+----------+-----+-------+---------+
+        |                                                          |                                               |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+        |                         Instance                         |                     Module                    |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+        +----------------------------------------------------------+-----------------------------------------------+---------+---------+-----------+----------+-----+-------+---------+
+        |grp_v_hcresampler_core_Pipeline_VITIS_LOOP_2052_2_fu_190  |v_hcresampler_core_Pipeline_VITIS_LOOP_2052_2  |        4|    32772|  26.936 ns|  0.221 ms|    4|  32772|       no|
+        +----------------------------------------------------------+-----------------------------------------------+---------+---------+-----------+----------+-----+-------+---------+
+
+        * Loop: 
+        +---------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
+        |                     |   Latency (cycles)   | Iteration |  Initiation Interval  |    Trip   |          |
+        |      Loop Name      |   min   |     max    |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +---------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_2049_1  |        0|  1073971192|  8 ~ 32776|          -|          -|  0 ~ 32767|        no|
+        +---------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    122|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|     450|    594|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    109|    -|
+|Register         |        -|    -|     234|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     684|    825|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+-----+-----+-----+
+    |                         Instance                         |                     Module                    | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+-----+-----+-----+
+    |grp_v_hcresampler_core_Pipeline_VITIS_LOOP_2052_2_fu_190  |v_hcresampler_core_Pipeline_VITIS_LOOP_2052_2  |        0|   0|  450|  594|    0|
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+-----+-----+-----+
+    |Total                                                     |                                               |        0|   0|  450|  594|    0|
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln2049_fu_273_p2       |         +|   0|  0|  20|          15|           1|
+    |loopWidth_fu_245_p2        |         +|   0|  0|  23|          16|          16|
+    |cmp36580_i_fu_255_p2       |      icmp|   0|  0|  23|          16|           1|
+    |icmp_ln2049_fu_268_p2      |      icmp|   0|  0|  23|          16|          16|
+    |ap_block_state1            |        or|   0|  0|   2|           1|           1|
+    |select_ln2028_1_fu_332_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln2028_2_fu_338_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln2028_fu_326_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln2047_1_fu_238_p3  |    select|   0|  0|   2|           1|           1|
+    |select_ln2047_fu_231_p3    |    select|   0|  0|   3|           1|           1|
+    |not_bPassThru_i_fu_250_p2  |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 122|          70|          63|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  37|          7|    1|          7|
+    |ap_done                      |   9|          2|    1|          2|
+    |height_val7_blk_n            |   9|          2|    1|          2|
+    |height_val7_c19_blk_n        |   9|          2|    1|          2|
+    |ovrlayYUV_read               |   9|          2|    1|          2|
+    |stream_out_hresampled_write  |   9|          2|    1|          2|
+    |width_val12_blk_n            |   9|          2|    1|          2|
+    |width_val12_c22_blk_n        |   9|          2|    1|          2|
+    |y_2_fu_72                    |   9|          2|   15|         30|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 109|         23|   23|         51|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |                                  Name                                 | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                              |   6|   0|    6|          0|
+    |ap_done_reg                                                            |   1|   0|    1|          0|
+    |cmp36580_i_reg_527                                                     |   1|   0|    1|          0|
+    |grp_v_hcresampler_core_Pipeline_VITIS_LOOP_2052_2_fu_190_ap_start_reg  |   1|   0|    1|          0|
+    |inpix_0_0_0_0_0_load585_lcssa609_i_fu_76                               |   8|   0|    8|          0|
+    |inpix_0_1_0_0_0_load587_lcssa612_i_fu_80                               |   8|   0|    8|          0|
+    |inpix_0_2_0_0_0_load589_lcssa615_i_fu_84                               |   8|   0|    8|          0|
+    |loopHeight_reg_507                                                     |  16|   0|   16|          0|
+    |loopWidth_reg_517                                                      |  16|   0|   16|          0|
+    |not_bPassThru_i_reg_522                                                |   1|   0|    1|          0|
+    |p_0_0_0_0_0450591_lcssa618_i_fu_88                                     |   8|   0|    8|          0|
+    |p_0_1_0_0_0593602_lcssa644_i_fu_116                                    |   8|   0|    8|          0|
+    |p_0_1_0_0_0593_lcssa621_i_fu_92                                        |   8|   0|    8|          0|
+    |p_0_2_0_0_0595605_lcssa647_i_fu_120                                    |   8|   0|    8|          0|
+    |p_0_2_0_0_0595_lcssa624_i_fu_96                                        |   8|   0|    8|          0|
+    |p_lcssa597632_i_fu_104                                                 |   8|   0|    8|          0|
+    |p_lcssa599638_i_fu_108                                                 |   8|   0|    8|          0|
+    |p_lcssa600641_i_fu_112                                                 |   8|   0|    8|          0|
+    |p_lcssa627_i_fu_100                                                    |   8|   0|    8|          0|
+    |pixbuf_y_1_fu_128                                                      |   8|   0|    8|          0|
+    |pixbuf_y_1_load_reg_537                                                |   8|   0|    8|          0|
+    |pixbuf_y_2_fu_132                                                      |   8|   0|    8|          0|
+    |pixbuf_y_2_load_reg_542                                                |   8|   0|    8|          0|
+    |pixbuf_y_3_fu_136                                                      |   8|   0|    8|          0|
+    |pixbuf_y_3_load_reg_547                                                |   8|   0|    8|          0|
+    |pixbuf_y_4_fu_140                                                      |   8|   0|    8|          0|
+    |pixbuf_y_fu_124                                                        |   8|   0|    8|          0|
+    |select_ln2047_reg_512                                                  |   1|   0|    2|          1|
+    |width_val12_read_reg_501                                               |  16|   0|   16|          0|
+    |y_2_fu_72                                                              |  15|   0|   15|          0|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                  | 234|   0|  235|          1|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------------+-----+-----+------------+-----------------------+--------------+
+|               RTL Ports              | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                                |   in|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ap_rst                                |   in|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ap_start                              |   in|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ap_done                               |  out|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ap_continue                           |   in|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ap_idle                               |  out|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ap_ready                              |  out|    1|  ap_ctrl_hs|     v_hcresampler_core|  return value|
+|ovrlayYUV_dout                        |   in|   24|     ap_fifo|              ovrlayYUV|       pointer|
+|ovrlayYUV_num_data_valid              |   in|    5|     ap_fifo|              ovrlayYUV|       pointer|
+|ovrlayYUV_fifo_cap                    |   in|    5|     ap_fifo|              ovrlayYUV|       pointer|
+|ovrlayYUV_empty_n                     |   in|    1|     ap_fifo|              ovrlayYUV|       pointer|
+|ovrlayYUV_read                        |  out|    1|     ap_fifo|              ovrlayYUV|       pointer|
+|height_val7_dout                      |   in|   16|     ap_fifo|            height_val7|       pointer|
+|height_val7_num_data_valid            |   in|    3|     ap_fifo|            height_val7|       pointer|
+|height_val7_fifo_cap                  |   in|    3|     ap_fifo|            height_val7|       pointer|
+|height_val7_empty_n                   |   in|    1|     ap_fifo|            height_val7|       pointer|
+|height_val7_read                      |  out|    1|     ap_fifo|            height_val7|       pointer|
+|width_val12_dout                      |   in|   16|     ap_fifo|            width_val12|       pointer|
+|width_val12_num_data_valid            |   in|    3|     ap_fifo|            width_val12|       pointer|
+|width_val12_fifo_cap                  |   in|    3|     ap_fifo|            width_val12|       pointer|
+|width_val12_empty_n                   |   in|    1|     ap_fifo|            width_val12|       pointer|
+|width_val12_read                      |  out|    1|     ap_fifo|            width_val12|       pointer|
+|p_read                                |   in|    1|     ap_none|                 p_read|        scalar|
+|stream_out_hresampled_din             |  out|   24|     ap_fifo|  stream_out_hresampled|       pointer|
+|stream_out_hresampled_num_data_valid  |   in|    3|     ap_fifo|  stream_out_hresampled|       pointer|
+|stream_out_hresampled_fifo_cap        |   in|    3|     ap_fifo|  stream_out_hresampled|       pointer|
+|stream_out_hresampled_full_n          |   in|    1|     ap_fifo|  stream_out_hresampled|       pointer|
+|stream_out_hresampled_write           |  out|    1|     ap_fifo|  stream_out_hresampled|       pointer|
+|height_val7_c19_din                   |  out|   16|     ap_fifo|        height_val7_c19|       pointer|
+|height_val7_c19_num_data_valid        |   in|    3|     ap_fifo|        height_val7_c19|       pointer|
+|height_val7_c19_fifo_cap              |   in|    3|     ap_fifo|        height_val7_c19|       pointer|
+|height_val7_c19_full_n                |   in|    1|     ap_fifo|        height_val7_c19|       pointer|
+|height_val7_c19_write                 |  out|    1|     ap_fifo|        height_val7_c19|       pointer|
+|width_val12_c22_din                   |  out|   16|     ap_fifo|        width_val12_c22|       pointer|
+|width_val12_c22_num_data_valid        |   in|    3|     ap_fifo|        width_val12_c22|       pointer|
+|width_val12_c22_fifo_cap              |   in|    3|     ap_fifo|        width_val12_c22|       pointer|
+|width_val12_c22_full_n                |   in|    1|     ap_fifo|        width_val12_c22|       pointer|
+|width_val12_c22_write                 |  out|    1|     ap_fifo|        width_val12_c22|       pointer|
++--------------------------------------+-----+-----+------------+-----------------------+--------------+
+

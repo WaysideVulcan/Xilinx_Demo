@@ -1,0 +1,280 @@
+{
+  "sampleCount": 2100,
+  "entries": [
+    {
+      "addr": 1050496,
+      "name": "_start",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil-crt0.S",
+      "fileBase": "xil-crt0.S",
+      "line": 122,
+      "count": 0,
+      "total": 2100.7615,
+      "callerMap": {},
+      "calleeMap": {
+        "1050148": 326.11722,
+        "1050124": 1774.6444
+      }
+    },
+    {
+      "addr": 1050680,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 955,
+      "total": 1910.0956,
+      "callerMap": {
+        "1050808": 955.0955,
+        "1050680": 955.0
+      },
+      "calleeMap": {
+        "1050680": 955.0955
+      }
+    },
+    {
+      "addr": 1050808,
+      "name": "sleep_A9",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/sleep.c",
+      "fileBase": "sleep.c",
+      "line": 62,
+      "count": 0,
+      "total": 1896.3419,
+      "callerMap": {
+        "1050148": 288.05203,
+        "1050124": 1608.2897
+      },
+      "calleeMap": {
+        "1050672": 512.1024,
+        "1050688": 273.02728,
+        "1050676": 6.0012,
+        "1050692": 2.0002,
+        "1050680": 955.19104,
+        "1050696": 96.009605,
+        "1050664": 44.0088,
+        "1050668": 4.0008,
+        "1050700": 3.0003,
+        "1050684": 1.0001
+      }
+    },
+    {
+      "addr": 1050124,
+      "name": "main",
+      "fileFull": "C:\\vi\\z702\\breathLed\\Debug/../src/helloworld.c",
+      "fileBase": "helloworld.c",
+      "line": 31,
+      "count": 0,
+      "total": 1774.4674,
+      "callerMap": {
+        "1050496": 1774.4674
+      },
+      "calleeMap": {
+        "1050800": 88.008804,
+        "1050816": 78.007805,
+        "1050808": 1608.4507
+      }
+    },
+    {
+      "addr": 1050672,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 512,
+      "total": 1024.0511,
+      "callerMap": {
+        "1050672": 512.0,
+        "1050808": 512.0512
+      },
+      "calleeMap": {
+        "1050672": 512.0512
+      }
+    },
+    {
+      "addr": 1050148,
+      "name": "main",
+      "fileFull": "C:\\vi\\z702\\breathLed\\Debug/../src/helloworld.c",
+      "fileBase": "helloworld.c",
+      "line": 19,
+      "count": 0,
+      "total": 326.08463,
+      "callerMap": {
+        "1050496": 326.08463
+      },
+      "calleeMap": {
+        "1050816": 20.002,
+        "1050800": 16.0016,
+        "1050804": 1.0001,
+        "1050808": 288.0808,
+        "1050812": 1.0001
+      }
+    },
+    {
+      "addr": 1050688,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 273,
+      "total": 273.0,
+      "callerMap": {
+        "1050808": 273.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050800,
+      "name": "sleep_A9",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/sleep.c",
+      "fileBase": "sleep.c",
+      "line": 61,
+      "count": 104,
+      "total": 104.0,
+      "callerMap": {
+        "1050148": 16.0,
+        "1050124": 88.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050816,
+      "name": "sleep_A9",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/sleep.c",
+      "fileBase": "sleep.c",
+      "line": 62,
+      "count": 98,
+      "total": 98.0,
+      "callerMap": {
+        "1050148": 20.0,
+        "1050124": 78.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050696,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xtime_l.c",
+      "fileBase": "xtime_l.c",
+      "line": 99,
+      "count": 96,
+      "total": 96.0,
+      "callerMap": {
+        "1050808": 96.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050664,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 44,
+      "total": 88.00441,
+      "callerMap": {
+        "1050808": 44.004402,
+        "1050664": 44.0
+      },
+      "calleeMap": {
+        "1050664": 44.004402
+      }
+    },
+    {
+      "addr": 1050676,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 6,
+      "total": 12.000601,
+      "callerMap": {
+        "1050676": 6.0,
+        "1050808": 6.0006
+      },
+      "calleeMap": {
+        "1050676": 6.0006
+      }
+    },
+    {
+      "addr": 1050668,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 4,
+      "total": 8.0004,
+      "callerMap": {
+        "1050808": 4.0004,
+        "1050668": 4.0
+      },
+      "calleeMap": {
+        "1050668": 4.0004
+      }
+    },
+    {
+      "addr": 1050700,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xtime_l.c",
+      "fileBase": "xtime_l.c",
+      "line": 100,
+      "count": 3,
+      "total": 3.0,
+      "callerMap": {
+        "1050808": 3.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050692,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xtime_l.c",
+      "fileBase": "xtime_l.c",
+      "line": 99,
+      "count": 2,
+      "total": 2.0,
+      "callerMap": {
+        "1050808": 2.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050684,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {
+        "1050808": 1.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050804,
+      "name": "sleep_A9",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/sleep.c",
+      "fileBase": "sleep.c",
+      "line": 61,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {
+        "1050148": 1.0
+      },
+      "calleeMap": {}
+    },
+    {
+      "addr": 1050812,
+      "name": "sleep_A9",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/sleep.c",
+      "fileBase": "sleep.c",
+      "line": 62,
+      "count": 1,
+      "total": 1.0,
+      "callerMap": {
+        "1050148": 1.0
+      },
+      "calleeMap": {}
+    }
+  ],
+  "stackTrace": true
+}

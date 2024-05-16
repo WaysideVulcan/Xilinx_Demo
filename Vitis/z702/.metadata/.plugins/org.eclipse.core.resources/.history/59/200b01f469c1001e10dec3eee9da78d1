@@ -1,0 +1,15 @@
+#include "xparameters.h"
+#include "xuartps.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+#include "xil_mmu.h"
+#include "stdio.h"
+
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define SHARE_BASE 0xffff0000
+
+int main()
+{
+
+}

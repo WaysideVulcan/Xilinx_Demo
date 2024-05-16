@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="109,050.790000 ns"></ZoomStartTime>
+      <ZoomEndTime time="109,318.990001 ns"></ZoomEndTime>
+      <Cursor1Time time="109,079.998000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/clk_200m" type="logic">
+      <obj_property name="ElementShortName">clk_200m</obj_property>
+      <obj_property name="ObjectShortName">clk_200m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/init_calib_complete" type="logic">
+      <obj_property name="ElementShortName">init_calib_complete</obj_property>
+      <obj_property name="ObjectShortName">init_calib_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/tg_compare_error" type="logic">
+      <obj_property name="ElementShortName">tg_compare_error</obj_property>
+      <obj_property name="ObjectShortName">tg_compare_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_addr" type="array">
+      <obj_property name="ElementShortName">app_addr[27:0]</obj_property>
+      <obj_property name="ObjectShortName">app_addr[27:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_cmd" type="array">
+      <obj_property name="ElementShortName">app_cmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">app_cmd[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_en" type="logic">
+      <obj_property name="ElementShortName">app_en</obj_property>
+      <obj_property name="ObjectShortName">app_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_rdy" type="logic">
+      <obj_property name="ElementShortName">app_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_wdf_data" type="array">
+      <obj_property name="ElementShortName">app_wdf_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_wdf_rdy" type="logic">
+      <obj_property name="ElementShortName">app_wdf_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_wdf_wren" type="logic">
+      <obj_property name="ElementShortName">app_wdf_wren</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_wdf_end" type="logic">
+      <obj_property name="ElementShortName">app_wdf_end</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_rd_data" type="array">
+      <obj_property name="ElementShortName">app_rd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_tb_top/mig_ddr_test_inst/app_rd_data_valid" type="logic">
+      <obj_property name="ElementShortName">app_rd_data_valid</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data_valid</obj_property>
+   </wvobject>
+</wave_config>

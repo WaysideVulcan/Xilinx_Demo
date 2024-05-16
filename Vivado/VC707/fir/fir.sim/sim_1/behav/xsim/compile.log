@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sources_1/new/fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_top
+WARNING: [VRFC 10-8497] literal value 'd128 truncated to fit in 1 bits [C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sources_1/new/fir_top.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sim_1/new/fit_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fit_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/fir_compiler_0/sim/fir_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_compiler_0'

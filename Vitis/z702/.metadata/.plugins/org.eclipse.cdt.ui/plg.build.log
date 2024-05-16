@@ -1,0 +1,40 @@
+17:17:14 **** Incremental Build of configuration Debug for project plg ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:11:9: warning: implicit declaration of function 'XGpio_Initialize' [-Wimplicit-function-declaration]
+   11 |         XGpio_Initialize(InstancePtr, DeviceId);
+      |         ^~~~~~~~~~~~~~~~
+../src/helloworld.c:11:26: error: 'InstancePtr' undeclared (first use in this function)
+   11 |         XGpio_Initialize(InstancePtr, DeviceId);
+      |                          ^~~~~~~~~~~
+../src/helloworld.c:11:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:11:39: error: 'DeviceId' undeclared (first use in this function)
+   11 |         XGpio_Initialize(InstancePtr, DeviceId);
+      |                                       ^~~~~~~~
+../src/helloworld.c:12:9: warning: implicit declaration of function 'GpioSetupIntrSystem' [-Wimplicit-function-declaration]
+   12 |         GpioSetupIntrSystem(IntcInstancePtr, InstancePtr, DeviceId,
+      |         ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:12:29: error: 'IntcInstancePtr' undeclared (first use in this function)
+   12 |         GpioSetupIntrSystem(IntcInstancePtr, InstancePtr, DeviceId,
+      |                             ^~~~~~~~~~~~~~~
+../src/helloworld.c:13:49: error: 'IntrId' undeclared (first use in this function)
+   13 |                                                 IntrId, IntrMask);
+      |                                                 ^~~~~~
+../src/helloworld.c:13:57: error: 'IntrMask' undeclared (first use in this function)
+   13 |                                                 IntrId, IntrMask);
+      |                                                         ^~~~~~~~
+../src/helloworld.c:14:9: warning: implicit declaration of function 'GpioDisableIntr' [-Wimplicit-function-declaration]
+   14 |         GpioDisableIntr(IntcInstancePtr, InstancePtr, IntrId, IntrMask);
+      |         ^~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+
+17:17:14 Build Finished (took 286ms)
+

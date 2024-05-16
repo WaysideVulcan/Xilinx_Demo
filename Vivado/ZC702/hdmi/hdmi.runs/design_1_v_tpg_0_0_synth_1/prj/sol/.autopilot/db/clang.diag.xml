@@ -1,0 +1,87 @@
+<dict>
+  <key>main-file</key>
+  <string>C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp</string>
+      <key>line</key>
+      <integer>2089</integer>
+      <key>column</key>
+      <integer>38</integer>
+      <key>message</key>
+      <string>extra token before variable expression is ignored</string>
+      <key>ID</key>
+      <integer>5541</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp</string>
+      <key>line</key>
+      <integer>2102</integer>
+      <key>column</key>
+      <integer>38</integer>
+      <key>message</key>
+      <string>extra token before variable expression is ignored</string>
+      <key>ID</key>
+      <integer>5541</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp</string>
+      <key>line</key>
+      <integer>2103</integer>
+      <key>column</key>
+      <integer>38</integer>
+      <key>message</key>
+      <string>extra token before variable expression is ignored</string>
+      <key>ID</key>
+      <integer>5541</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp</string>
+      <key>line</key>
+      <integer>2297</integer>
+      <key>column</key>
+      <integer>38</integer>
+      <key>message</key>
+      <string>extra token before variable expression is ignored</string>
+      <key>ID</key>
+      <integer>5541</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp</string>
+      <key>line</key>
+      <integer>2332</integer>
+      <key>column</key>
+      <integer>38</integer>
+      <key>message</key>
+      <string>extra token before variable expression is ignored</string>
+      <key>ID</key>
+      <integer>5541</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+  </array>
+</dict>

@@ -1,0 +1,37 @@
+22:01:48 **** Build of configuration Debug for project gpio_w ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/gpio_w.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_w.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bspinclude/include -MMD -MP -MF"src/gpio_w.d" -MT"src/gpio_w.o" -o "src/gpio_w.o" "../src/gpio_w.c"
+In file included from ../src/gpio_w.c:6:
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/gpio_w.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: gpio_w.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bsplib/lib -o "gpio_w.elf"  ./src/gpio_w.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_w.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size gpio_w.elf  |tee "gpio_w.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23034	   1152	  22616	  46802	   b6d2	gpio_w.elf
+'Finished building: gpio_w.elf.size'
+' '
+
+22:01:49 Build Finished (took 727ms)
+

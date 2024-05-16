@@ -1,0 +1,25 @@
+2024-01-26T17:45:15.327297600255-17:45:15 **** Build of configuration Debug for project xqspips_flash_intr_example_1 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/xqspips_flash_intr_example.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xqspips_flash_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/qspi/export/qspi/sw/qspi/standalone_domain/bspinclude/include -MMD -MP -MF"src/xqspips_flash_intr_example.d" -MT"src/xqspips_flash_intr_example.o" -o "src/xqspips_flash_intr_example.o" "../src/xqspips_flash_intr_example.c"
+000-'Finished building: ../src/xqspips_flash_intr_example.c'
+000-' '
+000-'Building target: xqspips_flash_intr_example_1.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702/qspi/export/qspi/sw/qspi/standalone_domain/bsplib/lib -o "xqspips_flash_intr_example_1.elf"  ./src/xqspips_flash_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: xqspips_flash_intr_example_1.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size xqspips_flash_intr_example_1.elf  |tee "xqspips_flash_intr_example_1.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  37987	   2016	  27032	  67035	  105db	xqspips_flash_intr_example_1.elf
+000-'Finished building: xqspips_flash_intr_example_1.elf.size'
+000-' '
+00255-
+17:45:16 Build Finished (took 746ms)
+

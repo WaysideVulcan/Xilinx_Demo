@@ -1,0 +1,27 @@
+2024-05-02T09:22:39.68616500255-09:22:39 **** Build of configuration Debug for project xgpio_intr_tapp_example_1 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/xgpio_intr_tapp_example.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_intr_tapp_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include -MMD -MP -MF"src/xgpio_intr_tapp_example.d" -MT"src/xgpio_intr_tapp_example.o" -o "src/xgpio_intr_tapp_example.o" "../src/xgpio_intr_tapp_example.c"
+000-../src/xgpio_intr_tapp_example.c: In function 'main':
+000/xgpio_intr_tapp_example_1/src/xgpio_intr_tapp_example.c80-1-1'XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR' undeclared (first use in this function)2XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR../src/xgpio_intr_tapp_example.c:80:33: error: 'XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+000-   80 | #define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+000-      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/xgpio_intr_tapp_example_1/src/xgpio_intr_tapp_example.c80-1-1in definition of macro 'INTC_GPIO_INTERRUPT_ID'0-../src/xgpio_intr_tapp_example.c:80:33: note: in definition of macro 'INTC_GPIO_INTERRUPT_ID'
+000-   80 | #define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+000-      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/xgpio_intr_tapp_example_1/src/xgpio_intr_tapp_example.c80-1-1each undeclared identifier is reported only once for each function it appears in0-../src/xgpio_intr_tapp_example.c:80:33: note: each undeclared identifier is reported only once for each function it appears in
+000-   80 | #define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+000-      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/xgpio_intr_tapp_example_1/src/xgpio_intr_tapp_example.c80-1-1in definition of macro 'INTC_GPIO_INTERRUPT_ID'0-../src/xgpio_intr_tapp_example.c:80:33: note: in definition of macro 'INTC_GPIO_INTERRUPT_ID'
+000-   80 | #define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+000-      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/xgpio_intr_tapp_example_10-1-1make[1]: *** [src/subdir.mk:23: src/xgpio_intr_tapp_example.o] Error 12-make[1]: *** [src/subdir.mk:23: src/xgpio_intr_tapp_example.o] Error 1
+000/xgpio_intr_tapp_example_10-1-1make: *** [makefile:34: all] Error 22-make: *** [makefile:34: all] Error 2
+00255-
+09:22:40 Build Finished (took 562ms)
+

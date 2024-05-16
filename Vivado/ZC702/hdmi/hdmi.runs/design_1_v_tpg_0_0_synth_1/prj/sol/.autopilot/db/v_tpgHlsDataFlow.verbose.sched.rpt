@@ -1,0 +1,288 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_tpgHlsDataFlow'
+================================================================
+* Date:           Fri Mar  1 09:43:11 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.73 ns|  7.209 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+------------+-----+------------+----------+
+    |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline |
+    |   min   |     max    |    min   |     max    | min |     max    |   Type   |
+    +---------+------------+----------+------------+-----+------------+----------+
+    |       35|  4296671206|  0.252 us|  30.975 sec|    3|  4296671207|  dataflow|
+    +---------+------------+----------+------------+-----+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.54>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%dpYUVCoef_val32_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %dpYUVCoef_val32"   --->   Operation 11 'read' 'dpYUVCoef_val32_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%ZplateVerContDelta_val27_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateVerContDelta_val27"   --->   Operation 12 'read' 'ZplateVerContDelta_val27_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%ZplateVerContStart_val26_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateVerContStart_val26"   --->   Operation 13 'read' 'ZplateVerContStart_val26_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%ZplateHorContDelta_val25_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateHorContDelta_val25"   --->   Operation 14 'read' 'ZplateHorContDelta_val25_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%ZplateHorContStart_val24_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %ZplateHorContStart_val24"   --->   Operation 15 'read' 'ZplateHorContStart_val24_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%motionSpeed_val19_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %motionSpeed_val19"   --->   Operation 16 'read' 'motionSpeed_val19_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%bckgndId_val15_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %bckgndId_val15"   --->   Operation 17 'read' 'bckgndId_val15_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%width_val12_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %width_val12"   --->   Operation 18 'read' 'width_val12_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%height_val7_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %height_val7"   --->   Operation 19 'read' 'height_val7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%boxColorB_val31_c = alloca i64 1"   --->   Operation 20 'alloca' 'boxColorB_val31_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%boxColorG_val30_c = alloca i64 1"   --->   Operation 21 'alloca' 'boxColorG_val30_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%boxColorR_val29_c = alloca i64 1"   --->   Operation 22 'alloca' 'boxColorR_val29_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%boxSize_val28_c = alloca i64 1"   --->   Operation 23 'alloca' 'boxSize_val28_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 3> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%crossHairY_val23_c = alloca i64 1"   --->   Operation 24 'alloca' 'crossHairY_val23_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 3> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%crossHairX_val22_c = alloca i64 1"   --->   Operation 25 'alloca' 'crossHairX_val22_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 3> <FIFO>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%colorFormat_val_c25 = alloca i64 1"   --->   Operation 26 'alloca' 'colorFormat_val_c25' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%colorFormat_val_c = alloca i64 1"   --->   Operation 27 'alloca' 'colorFormat_val_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 4> <FIFO>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%motionSpeed_val19_c = alloca i64 1"   --->   Operation 28 'alloca' 'motionSpeed_val19_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%maskId_val17_c = alloca i64 1"   --->   Operation 29 'alloca' 'maskId_val17_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%ovrlayId_val16_c = alloca i64 1"   --->   Operation 30 'alloca' 'ovrlayId_val16_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%fid_in_val14_c = alloca i64 1"   --->   Operation 31 'alloca' 'fid_in_val14_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.59> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 6> <FIFO>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%field_id_val13_c = alloca i64 1"   --->   Operation 32 'alloca' 'field_id_val13_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.59> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 6> <FIFO>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%width_val12_c24 = alloca i64 1"   --->   Operation 33 'alloca' 'width_val12_c24' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%width_val12_c23 = alloca i64 1"   --->   Operation 34 'alloca' 'width_val12_c23' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%width_val12_c22 = alloca i64 1"   --->   Operation 35 'alloca' 'width_val12_c22' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%width_val12_c = alloca i64 1"   --->   Operation 36 'alloca' 'width_val12_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 13> <Depth = 2> <FIFO>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%height_val7_c21 = alloca i64 1"   --->   Operation 37 'alloca' 'height_val7_c21' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%height_val7_c20 = alloca i64 1"   --->   Operation 38 'alloca' 'height_val7_c20' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%height_val7_c19 = alloca i64 1"   --->   Operation 39 'alloca' 'height_val7_c19' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%height_val7_c = alloca i64 1"   --->   Operation 40 'alloca' 'height_val7_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%bckgndYUV = alloca i64 1"   --->   Operation 41 'alloca' 'bckgndYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%ovrlayYUV = alloca i64 1"   --->   Operation 42 'alloca' 'ovrlayYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%stream_out_vresampled = alloca i64 1"   --->   Operation 43 'alloca' 'stream_out_vresampled' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%stream_out_hresampled = alloca i64 1"   --->   Operation 44 'alloca' 'stream_out_hresampled' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 2> <FIFO>
+ST_1 : Operation 45 [2/2] (3.54ns)   --->   "%call_ln345 = call void @tpgBackground, i16 %height_val7_read, i16 %width_val12_read, i8 %bckgndId_val15_read, i16 %ZplateHorContStart_val24_read, i16 %ZplateHorContDelta_val25_read, i16 %ZplateVerContStart_val26_read, i16 %ZplateVerContDelta_val27_read, i8 %dpYUVCoef_val32_read, i8 %motionSpeed_val19_read, i24 %bckgndYUV, i16 %height_val7_c21, i16 %width_val12_c24, i8 %motionSpeed_val19_c, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %hBarSel_4_0, i16 %zonePlateVAddr, i3 %vBarSel, i3 %hBarSel_0, i16 %hdata, i8 %vBarSel_2, i3 %hBarSel_3_0, i16 %rampVal_2, i1 %vBarSel_1, i3 %hBarSel_5_0, i8 %tpgBarSelYuv_y, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %xBar_0, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %xCount_0, i10 %yCount, i10 %xCount_4_0, i1 %vHatch, i10 %yCount_2, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i8 %tpgSinTableArray_9bit_3, i8 %tpgSinTableArray_9bit_4, i2 %tpgCheckerBoardArray, i10 %xCount_3_0, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_601_v, i3 %DPtpgBarArray, i10 %xCount_5_0, i6 %yCount_1, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_u, i8 %DPtpgBarSelYuv_709_v" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:345]   --->   Operation 45 'call' 'call_ln345' <Predicate = true> <Delay = 3.54> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 2.89>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%boxColorB_val31_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorB_val31"   --->   Operation 46 'read' 'boxColorB_val31_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%boxColorG_val30_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorG_val30"   --->   Operation 47 'read' 'boxColorG_val30_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%boxColorR_val29_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %boxColorR_val29"   --->   Operation 48 'read' 'boxColorR_val29_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%boxSize_val28_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %boxSize_val28"   --->   Operation 49 'read' 'boxSize_val28_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%crossHairY_val23_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %crossHairY_val23"   --->   Operation 50 'read' 'crossHairY_val23_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%crossHairX_val22_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %crossHairX_val22"   --->   Operation 51 'read' 'crossHairX_val22_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%colorFormat_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %colorFormat_val"   --->   Operation 52 'read' 'colorFormat_val_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%maskId_val17_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %maskId_val17"   --->   Operation 53 'read' 'maskId_val17_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%ovrlayId_val16_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %ovrlayId_val16"   --->   Operation 54 'read' 'ovrlayId_val16_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%fid_in_val14_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %fid_in_val14"   --->   Operation 55 'read' 'fid_in_val14_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%field_id_val13_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_id_val13"   --->   Operation 56 'read' 'field_id_val13_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (2.45ns)   --->   "%call_ln0 = call void @entry_proc, i16 %field_id_val13_read, i16 %field_id_val13_c, i1 %fid_in_val14_read, i1 %fid_in_val14_c, i8 %ovrlayId_val16_read, i8 %ovrlayId_val16_c, i8 %maskId_val17_read, i8 %maskId_val17_c, i8 %colorFormat_val_read, i8 %colorFormat_val_c25, i16 %crossHairX_val22_read, i16 %crossHairX_val22_c, i16 %crossHairY_val23_read, i16 %crossHairY_val23_c, i16 %boxSize_val28_read, i16 %boxSize_val28_c, i8 %boxColorR_val29_read, i8 %boxColorR_val29_c, i8 %boxColorG_val30_read, i8 %boxColorG_val30_c, i8 %boxColorB_val31_read, i8 %boxColorB_val31_c"   --->   Operation 57 'call' 'call_ln0' <Predicate = true> <Delay = 2.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln345 = call void @tpgBackground, i16 %height_val7_read, i16 %width_val12_read, i8 %bckgndId_val15_read, i16 %ZplateHorContStart_val24_read, i16 %ZplateHorContDelta_val25_read, i16 %ZplateVerContStart_val26_read, i16 %ZplateVerContDelta_val27_read, i8 %dpYUVCoef_val32_read, i8 %motionSpeed_val19_read, i24 %bckgndYUV, i16 %height_val7_c21, i16 %width_val12_c24, i8 %motionSpeed_val19_c, i8 %rampStart, i32 %s, i16 %rampVal_1, i8 %rampVal, i8 %hBarSel_4_0, i16 %zonePlateVAddr, i3 %vBarSel, i3 %hBarSel_0, i16 %hdata, i8 %vBarSel_2, i3 %hBarSel_3_0, i16 %rampVal_2, i1 %vBarSel_1, i3 %hBarSel_5_0, i8 %tpgBarSelYuv_y, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %xBar_0, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %xCount_0, i10 %yCount, i10 %xCount_4_0, i1 %vHatch, i10 %yCount_2, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i8 %tpgSinTableArray_9bit_3, i8 %tpgSinTableArray_9bit_4, i2 %tpgCheckerBoardArray, i10 %xCount_3_0, i10 %yCount_3, i28 %rSerie, i28 %gSerie, i28 %bSerie, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_601_v, i3 %DPtpgBarArray, i10 %xCount_5_0, i6 %yCount_1, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_u, i8 %DPtpgBarSelYuv_709_v" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:345]   --->   Operation 58 'call' 'call_ln345' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 59 [1/1] (2.89ns)   --->   "%call_ret8 = call i2 @v_tpgHlsDataFlow_Block_entry36_proc, i8 %colorFormat_val_read"   --->   Operation 59 'call' 'call_ret8' <Predicate = true> <Delay = 2.89> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%icmp_ln377_1_loc_channel = extractvalue i2 %call_ret8"   --->   Operation 60 'extractvalue' 'icmp_ln377_1_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%bPassThru_loc_channel = extractvalue i2 %call_ret8"   --->   Operation 61 'extractvalue' 'bPassThru_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 62 [2/2] (0.00ns)   --->   "%call_ln358 = call void @tpgForeground, i24 %bckgndYUV, i16 %height_val7_c21, i16 %width_val12_c24, i8 %ovrlayId_val16_c, i8 %maskId_val17_c, i8 %colorFormat_val_c25, i16 %crossHairX_val22_c, i16 %crossHairY_val23_c, i16 %boxSize_val28_c, i8 %boxColorR_val29_c, i8 %boxColorG_val30_c, i8 %boxColorB_val31_c, i8 %motionSpeed_val19_c, i24 %ovrlayYUV, i16 %height_val7_c20, i16 %width_val12_c23, i8 %colorFormat_val_c, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:358]   --->   Operation 62 'call' 'call_ln358' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 63 [1/2] (0.00ns)   --->   "%call_ln358 = call void @tpgForeground, i24 %bckgndYUV, i16 %height_val7_c21, i16 %width_val12_c24, i8 %ovrlayId_val16_c, i8 %maskId_val17_c, i8 %colorFormat_val_c25, i16 %crossHairX_val22_c, i16 %crossHairY_val23_c, i16 %boxSize_val28_c, i8 %boxColorR_val29_c, i8 %boxColorG_val30_c, i8 %boxColorB_val31_c, i8 %motionSpeed_val19_c, i24 %ovrlayYUV, i16 %height_val7_c20, i16 %width_val12_c23, i8 %colorFormat_val_c, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:358]   --->   Operation 63 'call' 'call_ln358' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 2.45>
+ST_5 : Operation 64 [2/2] (2.45ns)   --->   "%call_ln378 = call void @v_hcresampler_core, i24 %ovrlayYUV, i16 %height_val7_c20, i16 %width_val12_c23, i1 %bPassThru_loc_channel, i24 %stream_out_hresampled, i16 %height_val7_c19, i16 %width_val12_c22" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:378]   --->   Operation 64 'call' 'call_ln378' <Predicate = true> <Delay = 2.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 3.43>
+ST_6 : Operation 65 [1/2] (0.00ns)   --->   "%call_ln378 = call void @v_hcresampler_core, i24 %ovrlayYUV, i16 %height_val7_c20, i16 %width_val12_c23, i1 %bPassThru_loc_channel, i24 %stream_out_hresampled, i16 %height_val7_c19, i16 %width_val12_c22" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:378]   --->   Operation 65 'call' 'call_ln378' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 66 [1/1] (3.43ns)   --->   "%bPassThru_1_loc_channel = call i1 @v_tpgHlsDataFlow_Block_entry38_proc, i1 %icmp_ln377_1_loc_channel"   --->   Operation 66 'call' 'bPassThru_1_loc_channel' <Predicate = true> <Delay = 3.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 7 <SV = 6> <Delay = 2.45>
+ST_7 : Operation 67 [2/2] (2.45ns)   --->   "%call_ln386 = call void @v_vcresampler_core, i24 %stream_out_hresampled, i16 %height_val7_c19, i16 %width_val12_c22, i1 %bPassThru_1_loc_channel, i24 %stream_out_vresampled, i12 %height_val7_c, i13 %width_val12_c" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:386]   --->   Operation 67 'call' 'call_ln386' <Predicate = true> <Delay = 2.45> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 68 [1/2] (0.00ns)   --->   "%call_ln386 = call void @v_vcresampler_core, i24 %stream_out_hresampled, i16 %height_val7_c19, i16 %width_val12_c22, i1 %bPassThru_1_loc_channel, i24 %stream_out_vresampled, i12 %height_val7_c, i13 %width_val12_c" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:386]   --->   Operation 68 'call' 'call_ln386' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 69 [2/2] (0.00ns)   --->   "%call_ln399 = call void @MultiPixStream2AXIvideo, i24 %stream_out_vresampled, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %height_val7_c, i13 %width_val12_c, i8 %colorFormat_val_c, i1 %fid_in_val14_c, i1 %fid, i16 %field_id_val13_c, i1 %fidStored, i16 %counter" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 69 'call' 'call_ln399' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 70 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @boxColorB_OC_val31_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %boxColorB_val31_c, i8 %boxColorB_val31_c"   --->   Operation 70 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %boxColorB_val31_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 71 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 72 [1/1] (0.00ns)   --->   "%empty_79 = specchannel i32 @_ssdm_op_SpecChannel, void @boxColorG_OC_val30_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %boxColorG_val30_c, i8 %boxColorG_val30_c"   --->   Operation 72 'specchannel' 'empty_79' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %boxColorG_val30_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 74 [1/1] (0.00ns)   --->   "%empty_80 = specchannel i32 @_ssdm_op_SpecChannel, void @boxColorR_OC_val29_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %boxColorR_val29_c, i8 %boxColorR_val29_c"   --->   Operation 74 'specchannel' 'empty_80' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 75 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %boxColorR_val29_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 75 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 76 [1/1] (0.00ns)   --->   "%empty_81 = specchannel i32 @_ssdm_op_SpecChannel, void @boxSize_OC_val28_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i16 %boxSize_val28_c, i16 %boxSize_val28_c"   --->   Operation 76 'specchannel' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 77 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %boxSize_val28_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 77 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 78 [1/1] (0.00ns)   --->   "%empty_82 = specchannel i32 @_ssdm_op_SpecChannel, void @crossHairY_OC_val23_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i16 %crossHairY_val23_c, i16 %crossHairY_val23_c"   --->   Operation 78 'specchannel' 'empty_82' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 79 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %crossHairY_val23_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 79 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 80 [1/1] (0.00ns)   --->   "%empty_83 = specchannel i32 @_ssdm_op_SpecChannel, void @crossHairX_OC_val22_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i16 %crossHairX_val22_c, i16 %crossHairX_val22_c"   --->   Operation 80 'specchannel' 'empty_83' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 81 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %crossHairX_val22_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 81 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 82 [1/1] (0.00ns)   --->   "%empty_84 = specchannel i32 @_ssdm_op_SpecChannel, void @colorFormat_OC_val_c25_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %colorFormat_val_c25, i8 %colorFormat_val_c25"   --->   Operation 82 'specchannel' 'empty_84' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %colorFormat_val_c25, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 84 [1/1] (0.00ns)   --->   "%empty_85 = specchannel i32 @_ssdm_op_SpecChannel, void @colorFormat_OC_val_c_str, i32 1, void @p_str, void @p_str, i32 4, i32 0, i8 %colorFormat_val_c, i8 %colorFormat_val_c"   --->   Operation 84 'specchannel' 'empty_85' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %colorFormat_val_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 86 [1/1] (0.00ns)   --->   "%empty_86 = specchannel i32 @_ssdm_op_SpecChannel, void @motionSpeed_OC_val19_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i8 %motionSpeed_val19_c, i8 %motionSpeed_val19_c"   --->   Operation 86 'specchannel' 'empty_86' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 87 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %motionSpeed_val19_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 87 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 88 [1/1] (0.00ns)   --->   "%empty_87 = specchannel i32 @_ssdm_op_SpecChannel, void @maskId_OC_val17_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %maskId_val17_c, i8 %maskId_val17_c"   --->   Operation 88 'specchannel' 'empty_87' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 89 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %maskId_val17_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 89 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 90 [1/1] (0.00ns)   --->   "%empty_88 = specchannel i32 @_ssdm_op_SpecChannel, void @ovrlayId_OC_val16_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %ovrlayId_val16_c, i8 %ovrlayId_val16_c"   --->   Operation 90 'specchannel' 'empty_88' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %ovrlayId_val16_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 92 [1/1] (0.00ns)   --->   "%empty_89 = specchannel i32 @_ssdm_op_SpecChannel, void @fid_in_OC_val14_c_str, i32 1, void @p_str, void @p_str, i32 6, i32 0, i1 %fid_in_val14_c, i1 %fid_in_val14_c"   --->   Operation 92 'specchannel' 'empty_89' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 93 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %fid_in_val14_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 93 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 94 [1/1] (0.00ns)   --->   "%empty_90 = specchannel i32 @_ssdm_op_SpecChannel, void @field_id_OC_val13_c_str, i32 1, void @p_str, void @p_str, i32 6, i32 0, i16 %field_id_val13_c, i16 %field_id_val13_c"   --->   Operation 94 'specchannel' 'empty_90' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 95 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %field_id_val13_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 95 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 96 [1/1] (0.00ns)   --->   "%empty_91 = specchannel i32 @_ssdm_op_SpecChannel, void @width_OC_val12_c24_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %width_val12_c24, i16 %width_val12_c24"   --->   Operation 96 'specchannel' 'empty_91' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 97 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width_val12_c24, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 97 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 98 [1/1] (0.00ns)   --->   "%empty_92 = specchannel i32 @_ssdm_op_SpecChannel, void @width_OC_val12_c23_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %width_val12_c23, i16 %width_val12_c23"   --->   Operation 98 'specchannel' 'empty_92' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 99 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width_val12_c23, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 99 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 100 [1/1] (0.00ns)   --->   "%empty_93 = specchannel i32 @_ssdm_op_SpecChannel, void @width_OC_val12_c22_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %width_val12_c22, i16 %width_val12_c22"   --->   Operation 100 'specchannel' 'empty_93' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 101 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width_val12_c22, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 101 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 102 [1/1] (0.00ns)   --->   "%empty_94 = specchannel i32 @_ssdm_op_SpecChannel, void @width_OC_val12_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i13 %width_val12_c, i13 %width_val12_c"   --->   Operation 102 'specchannel' 'empty_94' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 103 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i13 %width_val12_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 103 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 104 [1/1] (0.00ns)   --->   "%empty_95 = specchannel i32 @_ssdm_op_SpecChannel, void @height_OC_val7_c21_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %height_val7_c21, i16 %height_val7_c21"   --->   Operation 104 'specchannel' 'empty_95' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 105 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height_val7_c21, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 105 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 106 [1/1] (0.00ns)   --->   "%empty_96 = specchannel i32 @_ssdm_op_SpecChannel, void @height_OC_val7_c20_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %height_val7_c20, i16 %height_val7_c20"   --->   Operation 106 'specchannel' 'empty_96' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 107 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height_val7_c20, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 107 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 108 [1/1] (0.00ns)   --->   "%empty_97 = specchannel i32 @_ssdm_op_SpecChannel, void @height_OC_val7_c19_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %height_val7_c19, i16 %height_val7_c19"   --->   Operation 108 'specchannel' 'empty_97' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 109 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height_val7_c19, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 109 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 110 [1/1] (0.00ns)   --->   "%empty_98 = specchannel i32 @_ssdm_op_SpecChannel, void @height_OC_val7_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i12 %height_val7_c, i12 %height_val7_c"   --->   Operation 110 'specchannel' 'empty_98' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 111 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %height_val7_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 111 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 112 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_25"   --->   Operation 112 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 113 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_22"   --->   Operation 113 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 114 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %m_axis_video_V_dest_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_user_V, i3 %m_axis_video_V_strb_V, i3 %m_axis_video_V_keep_V, i24 %m_axis_video_V_data_V, void @empty_19, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 114 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 115 [1/1] (0.00ns)   --->   "%empty_99 = specchannel i32 @_ssdm_op_SpecChannel, void @bckgndYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %bckgndYUV, i24 %bckgndYUV"   --->   Operation 115 'specchannel' 'empty_99' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %bckgndYUV, void @empty_23, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 117 [1/1] (0.00ns)   --->   "%empty_100 = specchannel i32 @_ssdm_op_SpecChannel, void @ovrlayYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %ovrlayYUV, i24 %ovrlayYUV"   --->   Operation 117 'specchannel' 'empty_100' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %ovrlayYUV, void @empty_23, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 119 [1/1] (0.00ns)   --->   "%empty_101 = specchannel i32 @_ssdm_op_SpecChannel, void @stream_out_vresampled_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i24 %stream_out_vresampled, i24 %stream_out_vresampled"   --->   Operation 119 'specchannel' 'empty_101' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 120 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %stream_out_vresampled, void @empty_23, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 120 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%empty_102 = specchannel i32 @_ssdm_op_SpecChannel, void @stream_out_hresampled_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i24 %stream_out_hresampled, i24 %stream_out_hresampled"   --->   Operation 121 'specchannel' 'empty_102' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 122 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %stream_out_hresampled, void @empty_23, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 122 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 123 [1/2] (0.00ns)   --->   "%call_ln399 = call void @MultiPixStream2AXIvideo, i24 %stream_out_vresampled, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %height_val7_c, i13 %width_val12_c, i8 %colorFormat_val_c, i1 %fid_in_val14_c, i1 %fid, i16 %field_id_val13_c, i1 %fidStored, i16 %counter" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399]   --->   Operation 123 'call' 'call_ln399' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 124 [1/1] (0.00ns)   --->   "%ret_ln401 = ret" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:401]   --->   Operation 124 'ret' 'ret_ln401' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.734ns, clock uncertainty: 1.818ns.
+
+ <State 1>: 3.543ns
+The critical path consists of the following:
+	wire read operation ('dpYUVCoef_val32_read') on port 'dpYUVCoef_val32' [82]  (0.000 ns)
+	'call' operation 0 bit ('call_ln345', C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:345) to 'tpgBackground' [181]  (3.543 ns)
+
+ <State 2>: 2.893ns
+The critical path consists of the following:
+	wire read operation ('colorFormat_val_read') on port 'colorFormat_val' [93]  (0.000 ns)
+	'call' operation 2 bit ('call_ret8') to 'v_tpgHlsDataFlow_Block_entry36_proc' [183]  (2.893 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 2.458ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln378', C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:378) to 'v_hcresampler_core' [186]  (2.458 ns)
+
+ <State 6>: 3.436ns
+The critical path consists of the following:
+	'call' operation 1 bit ('bPassThru_1_loc_channel') to 'v_tpgHlsDataFlow_Block_entry38_proc' [187]  (3.436 ns)
+
+ <State 7>: 2.458ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln386', C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:386) to 'v_vcresampler_core' [188]  (2.458 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

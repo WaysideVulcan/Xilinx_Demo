@@ -1,0 +1,448 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_tpgHlsDataFlow_Block_entry36_proc'
+================================================================
+* Date:           Fri Mar  1 09:43:17 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.73 ns|  2.893 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     36|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     27|    -|
+|Register         |        -|    -|       4|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       4|     63|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |icmp_ln377_1_fu_24_p2  |      icmp|   0|  0|  15|           8|           2|
+    |icmp_ln377_fu_18_p2    |      icmp|   0|  0|  15|           8|           2|
+    |ap_block_state1        |        or|   0|  0|   2|           1|           1|
+    |or_ln377_fu_30_p2      |        or|   0|  0|   2|           1|           1|
+    |bPassThru_fu_36_p2     |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  36|          19|           8|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_done      |   9|          2|    1|          2|
+    |ap_return_0  |   9|          2|    1|          2|
+    |ap_return_1  |   9|          2|    1|          2|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |  27|          6|    3|          6|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+---+----+-----+-----------+
+    |       Name       | FF| LUT| Bits| Const Bits|
+    +------------------+---+----+-----+-----------+
+    |ap_CS_fsm         |  1|   0|    1|          0|
+    |ap_done_reg       |  1|   0|    1|          0|
+    |ap_return_0_preg  |  1|   0|    1|          0|
+    |ap_return_1_preg  |  1|   0|    1|          0|
+    +------------------+---+----+-----+-----------+
+    |Total             |  4|   0|    4|          0|
+    +------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |            Source Object            |    C Type    |
++-----------------+-----+-----+------------+-------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_continue      |   in|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_return_0      |  out|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|ap_return_1      |  out|    1|  ap_ctrl_hs|  v_tpgHlsDataFlow_Block_entry36_proc|  return value|
+|colorFormat_val  |   in|    8|     ap_none|                      colorFormat_val|        scalar|
++-----------------+-----+-----+------------+-------------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.89>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%colorFormat_val_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %colorFormat_val" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 2 'read' 'colorFormat_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (1.91ns)   --->   "%icmp_ln377 = icmp_eq  i8 %colorFormat_val_read, i8 2" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 3 'icmp' 'icmp_ln377' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 4 [1/1] (1.91ns)   --->   "%icmp_ln377_1 = icmp_eq  i8 %colorFormat_val_read, i8 3" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 4 'icmp' 'icmp_ln377_1' <Predicate = true> <Delay = 1.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 5 [1/1] (0.00ns) (grouped into LUT with out node bPassThru)   --->   "%or_ln377 = or i1 %icmp_ln377, i1 %icmp_ln377_1" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 5 'or' 'or_ln377' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.97ns) (out node of the LUT)   --->   "%bPassThru = xor i1 %or_ln377, i1 1" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 6 'xor' 'bPassThru' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%mrv = insertvalue i2 <undef>, i1 %icmp_ln377_1" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 7 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i2 %mrv, i1 %bPassThru" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 8 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln377 = ret i2 %mrv_1" [C:/va/z702/hdmi/hdmi.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:377]   --->   Operation 9 'ret' 'ret_ln377' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 1
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ colorFormat_val]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+colorFormat_val_read (read       ) [ 00]
+icmp_ln377           (icmp       ) [ 00]
+icmp_ln377_1         (icmp       ) [ 00]
+or_ln377             (or         ) [ 00]
+bPassThru            (xor        ) [ 00]
+mrv                  (insertvalue) [ 00]
+mrv_1                (insertvalue) [ 00]
+ret_ln377            (ret        ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="colorFormat_val">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="colorFormat_val"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1004" name="colorFormat_val_read_read_fu_12">
+<pin_list>
+<pin id="13" dir="0" index="0" bw="8" slack="0"/>
+<pin id="14" dir="0" index="1" bw="8" slack="0"/>
+<pin id="15" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="colorFormat_val_read/1 "/>
+</bind>
+</comp>
+
+<comp id="18" class="1004" name="icmp_ln377_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="8" slack="0"/>
+<pin id="20" dir="0" index="1" bw="8" slack="0"/>
+<pin id="21" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln377/1 "/>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="icmp_ln377_1_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="8" slack="0"/>
+<pin id="26" dir="0" index="1" bw="8" slack="0"/>
+<pin id="27" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln377_1/1 "/>
+</bind>
+</comp>
+
+<comp id="30" class="1004" name="or_ln377_fu_30">
+<pin_list>
+<pin id="31" dir="0" index="0" bw="1" slack="0"/>
+<pin id="32" dir="0" index="1" bw="1" slack="0"/>
+<pin id="33" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="or_ln377/1 "/>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="bPassThru_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="1" slack="0"/>
+<pin id="38" dir="0" index="1" bw="1" slack="0"/>
+<pin id="39" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="bPassThru/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="mrv_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="2" slack="0"/>
+<pin id="44" dir="0" index="1" bw="1" slack="0"/>
+<pin id="45" dir="1" index="2" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="mrv_1_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="2" slack="0"/>
+<pin id="50" dir="0" index="1" bw="1" slack="0"/>
+<pin id="51" dir="1" index="2" bw="2" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_1/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="16"><net_src comp="2" pin="0"/><net_sink comp="12" pin=0"/></net>
+
+<net id="17"><net_src comp="0" pin="0"/><net_sink comp="12" pin=1"/></net>
+
+<net id="22"><net_src comp="12" pin="2"/><net_sink comp="18" pin=0"/></net>
+
+<net id="23"><net_src comp="4" pin="0"/><net_sink comp="18" pin=1"/></net>
+
+<net id="28"><net_src comp="12" pin="2"/><net_sink comp="24" pin=0"/></net>
+
+<net id="29"><net_src comp="6" pin="0"/><net_sink comp="24" pin=1"/></net>
+
+<net id="34"><net_src comp="18" pin="2"/><net_sink comp="30" pin=0"/></net>
+
+<net id="35"><net_src comp="24" pin="2"/><net_sink comp="30" pin=1"/></net>
+
+<net id="40"><net_src comp="30" pin="2"/><net_sink comp="36" pin=0"/></net>
+
+<net id="41"><net_src comp="8" pin="0"/><net_sink comp="36" pin=1"/></net>
+
+<net id="46"><net_src comp="10" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="47"><net_src comp="24" pin="2"/><net_sink comp="42" pin=1"/></net>
+
+<net id="52"><net_src comp="42" pin="2"/><net_sink comp="48" pin=0"/></net>
+
+<net id="53"><net_src comp="36" pin="2"/><net_sink comp="48" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: v_tpgHlsDataFlow_Block_entry36_proc : colorFormat_val | {1 }
+  - Chain level:
+	State 1
+		or_ln377 : 1
+		bPassThru : 1
+		mrv : 1
+		mrv_1 : 1
+		ret_ln377 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------|---------|---------|
+| Operation|         Functional Unit         |    FF   |   LUT   |
+|----------|---------------------------------|---------|---------|
+|   icmp   |         icmp_ln377_fu_18        |    0    |    15   |
+|          |        icmp_ln377_1_fu_24       |    0    |    15   |
+|----------|---------------------------------|---------|---------|
+|    or    |          or_ln377_fu_30         |    0    |    2    |
+|----------|---------------------------------|---------|---------|
+|    xor   |         bPassThru_fu_36         |    0    |    2    |
+|----------|---------------------------------|---------|---------|
+|   read   | colorFormat_val_read_read_fu_12 |    0    |    0    |
+|----------|---------------------------------|---------|---------|
+|insertvalue|            mrv_fu_42            |    0    |    0    |
+|          |           mrv_1_fu_48           |    0    |    0    |
+|----------|---------------------------------|---------|---------|
+|   Total  |                                 |    0    |    34   |
+|----------|---------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |    0   |   34   |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |    -   |    -   |
++-----------+--------+--------+
+|   Total   |    0   |   34   |
++-----------+--------+--------+

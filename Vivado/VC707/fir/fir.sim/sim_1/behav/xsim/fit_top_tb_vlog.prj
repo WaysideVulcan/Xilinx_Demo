@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../fir.ip_user_files/ipstatic" \
+"../../../../fir.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../fir.srcs/sources_1/new/fir_top.v" \
+"../../../../fir.srcs/sim_1/new/fit_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

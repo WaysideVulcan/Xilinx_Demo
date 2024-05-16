@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Vulcan/Design_Tool/Vivado/VC707/ram/ram.gen/sources_1/ip/ram/sim/ram.v,1713936633,verilog,,C:/Vulcan/Design_Tool/Vivado/VC707/ram/ram.srcs/sources_1/new/ram_test.v,,ram,,,,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/ram/ram.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+,,,,,,tb_ram_pp,,,,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/ram/ram.srcs/sources_1/new/ram_test.v,1713938770,verilog,,C:/Vulcan/Design_Tool/Vivado/VC707/ram/ram.srcs/sim_1/new/tb_ram_pp.v,,ram_pp,,,,,,,,

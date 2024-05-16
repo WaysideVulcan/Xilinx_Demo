@@ -1,0 +1,67 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Mar  1 09:54:42 2024
+| Host         : LAPTOP-90IBO783 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 3          |
+| DPOP-2 | Warning  | MREG Output pipelining | 3          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mac_muladd_16s_16s_16ns_16_4_1_U40/design_1_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_1_U/p_reg_reg input design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mac_muladd_16s_16s_16ns_16_4_1_U40/design_1_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mac_muladd_8ns_5ns_16ns_17_4_1_U47/design_1_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_7_U/p_reg_reg input design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mac_muladd_8ns_5ns_16ns_17_4_1_U47/design_1_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1_DSP48_7_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mac_muladd_8ns_8ns_15ns_16_4_1_U45/design_1_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_6_U/p_reg_reg input design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mac_muladd_8ns_8ns_15ns_16_4_1_U45/design_1_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mul_11ns_13ns_23_2_1_U29/buff0_reg multiplier stage design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mul_11ns_13ns_23_2_1_U29/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mul_11ns_13ns_23_2_1_U30/buff0_reg multiplier stage design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mul_11ns_13ns_23_2_1_U30/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mul_11ns_13ns_23_2_1_U31/buff0_reg multiplier stage design_1_i/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_405/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_404/mul_11ns_13ns_23_2_1_U31/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+

@@ -1,0 +1,95 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_11 -L axi_utils_v2_0_7 -L fir_compiler_v7_2_20 -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fit_top_tb_behav xil_defaultlib.fit_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package fir_compiler_v7_2_20.fir_compiler_v7_2_20_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_20.globals_pkg
+Compiling package fir_compiler_v7_2_20.components
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_7.global_util_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.5,C...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_ELABORATION...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_srl_fifo [\glb_srl_fifo(width=8,has_ifx=tr...]
+Compiling architecture xilinx of entity axi_utils_v2_0_7.glb_ifx_slave [\glb_ifx_slave(has_ifx=true)\]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.buff [\buff(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.buff [\buff(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.calc [\calc(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(inmodereg=0,mask="11111...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.calc [\calc(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.add_accum [\add_accum(c_xdevicefamily="virt...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=9,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.delay [\delay(c_delay_len=12,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.single_rate [\single_rate(c_xdevicefamily="vi...]
+Compiling architecture synth of entity fir_compiler_v7_2_20.fir_compiler_v7_2_20_viv [\fir_compiler_v7_2_20_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_20.fir_compiler_v7_2_20 [\fir_compiler_v7_2_20(c_xdevicef...]
+Compiling architecture fir_compiler_0_arch of entity xil_defaultlib.fir_compiler_0 [fir_compiler_0_default]
+Compiling module xil_defaultlib.fir_top
+Compiling module xil_defaultlib.fit_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fit_top_tb_behav

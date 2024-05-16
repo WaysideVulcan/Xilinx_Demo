@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/va/z702/axi_gpio/axi_gpio.srcs/constrs_1/new/cons.xdc rfile:../../../axi_gpio.srcs/constrs_1/new/cons.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G19 [get_ports {gpio_sw_tri_i[1]}]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F19 [get_ports {gpio_sw_tri_i[0]}]

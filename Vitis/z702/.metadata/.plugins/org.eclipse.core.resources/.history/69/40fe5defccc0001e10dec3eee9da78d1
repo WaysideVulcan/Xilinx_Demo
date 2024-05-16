@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sd_rw" location="C:/vi/z702/sd_rw" platform="C:/vi/z702/sd_card/export/sd_card/sd_card.xpfm" platformUID="xilinx:zc702::0.0(custom)" systemProject="sd_rw_system" sysConfig="sd_card" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="0f74e4bca2be336dde6dae7c6cc9ec11">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1620846469">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1587251836" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

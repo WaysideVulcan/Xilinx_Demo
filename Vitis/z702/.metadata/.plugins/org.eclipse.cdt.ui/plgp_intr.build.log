@@ -1,0 +1,32 @@
+10:45:42 **** Incremental Build of configuration Debug for project plgp_intr ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:7:
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: plgp_intr.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bsplib/lib -o "plgp_intr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: plgp_intr.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size plgp_intr.elf  |tee "plgp_intr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59899	   3348	  22728	  85975	  14fd7	plgp_intr.elf
+'Finished building: plgp_intr.elf.size'
+' '
+
+10:45:42 Build Finished (took 663ms)
+

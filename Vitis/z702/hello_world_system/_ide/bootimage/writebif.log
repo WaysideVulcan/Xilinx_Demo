@@ -1,0 +1,9 @@
+TRACE::2023-12-12.15:56:20::SCWBifWriter::Found the complete platform C:/vi/z702/12121/export/12121/12121.xpfm
+TRACE::2023-12-12.15:56:20::SCWBifWriter::hardware databse : design_1_wrapper_8
+TRACE::2023-12-12.15:56:20::SCWBifWriter::bitstream found in the design
+TRACE::2023-12-12.15:56:20::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2023-12-12.15:56:20::SCWBifWriter::proc type : 
+TRACE::2023-12-12.15:56:20::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2023-12-12.15:56:20::SCWBifWriter::Device type is : zynq
+TRACE::2023-12-12.15:56:20::SCWBifWriter::Writing BIF to file : C:/vi/z702/hello_world_system/_ide/bootimage/template_hello_world_system.bif
+TRACE::2023-12-12.15:56:20::SCWBifWriter::Writing the Zynq Baremetal bif 

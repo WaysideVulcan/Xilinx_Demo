@@ -1,0 +1,10 @@
+16:55:14 **** Build of configuration Debug for project FSBL_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 54114 C:/vi/z702/amp_test/export/amp_test/amp_test.xpfm standalone_domain C:/vi/z702/FSBL_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702/amp_test/export/amp_test/amp_test.xpfm --sys_config amp_test --bif C:/vi/z702/FSBL_system/Debug/system.bif --bitstream C:/vi/z702/FSBL/_ide/bitstream/design_1_wrapper.bit --elf C:/vi/z702/FSBL/Debug/FSBL.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/vi/z702/FSBL/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/vi/z702/FSBL_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+16:55:18 Build Finished (took 4s.429ms)
+

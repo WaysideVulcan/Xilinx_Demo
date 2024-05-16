@@ -1,0 +1,82 @@
+<stg><name>v_tpgHlsDataFlow_Block_entry38_proc</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+entry:0 %p_read_3 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read
+
+]]></Node>
+<StgValue><ssdm name="p_read_3"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+entry:1 %bPassThru = xor i1 %p_read_3, i1 1
+
+]]></Node>
+<StgValue><ssdm name="bPassThru"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="1">
+<![CDATA[
+entry:2 %ret_ln385 = ret i1 %bPassThru
+
+]]></Node>
+<StgValue><ssdm name="ret_ln385"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="5" name="p_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="7" from="_ssdm_op_Read.ap_auto.i1" to="p_read_3" fromId="6" toId="2">
+</dataflow>
+<dataflow id="8" from="p_read" to="p_read_3" fromId="5" toId="2">
+</dataflow>
+<dataflow id="9" from="p_read_3" to="bPassThru" fromId="2" toId="3">
+</dataflow>
+<dataflow id="11" from="StgValue_10" to="bPassThru" fromId="10" toId="3">
+</dataflow>
+<dataflow id="12" from="bPassThru" to="ret_ln385" fromId="3" toId="4">
+</dataflow>
+</dataflows>
+
+
+</stg>

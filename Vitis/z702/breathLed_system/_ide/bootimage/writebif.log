@@ -1,0 +1,9 @@
+TRACE::2023-11-30.09:06:45::SCWBifWriter::Found the complete platform C:/vi/z702/custom_led/export/custom_led/custom_led.xpfm
+TRACE::2023-11-30.09:06:46::SCWBifWriter::hardware databse : design_1_wrapper_13
+TRACE::2023-11-30.09:06:46::SCWBifWriter::bitstream found in the design
+TRACE::2023-11-30.09:06:46::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2023-11-30.09:06:46::SCWBifWriter::proc type : 
+TRACE::2023-11-30.09:06:46::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2023-11-30.09:06:46::SCWBifWriter::Device type is : zynq
+TRACE::2023-11-30.09:06:46::SCWBifWriter::Writing BIF to file : C:/vi/z702/breathLed_system/_ide/bootimage/template_breathLed_system.bif
+TRACE::2023-11-30.09:06:46::SCWBifWriter::Writing the Zynq Baremetal bif 

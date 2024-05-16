@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/boot/fsbl.elf
+	C:/vi/z702/plgp_intr/_ide/bitstream/design_1_wrapper.bit
+	C:/vi/z702/plgp_intr/Debug/plgp_intr.elf
+}

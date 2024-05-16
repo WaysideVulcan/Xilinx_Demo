@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN F14 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports led_out]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_n]
+set_property PACKAGE_PIN H14 [get_ports sys_rst_n]
+set_property PACKAGE_PIN E18 [get_ports led_out]

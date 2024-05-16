@@ -1,0 +1,37 @@
+09:15:23 **** Incremental Build of configuration Debug for project Adder ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/Adder.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Adder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702_advanced/axi_lite/export/axi_lite/sw/axi_lite/standalone_domain/bspinclude/include -MMD -MP -MF"src/Adder.d" -MT"src/Adder.o" -o "src/Adder.o" "../src/Adder.c"
+In file included from C:/vi/z702_advanced/axi_lite/export/axi_lite/sw/axi_lite/standalone_domain/bspinclude/include/xexample.h:19,
+                 from ../src/Adder.c:5:
+../src/Adder.c: In function 'init_Adder':
+C:/vi/z702_advanced/axi_lite/export/axi_lite/sw/axi_lite/standalone_domain/bspinclude/include/xstatus.h:45:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   45 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/Adder.c:22:32: note: in expansion of macro 'XST_FAILURE'
+   22 |                         return XST_FAILURE;
+      |                                ^~~~~~~~~~~
+../src/Adder.c:14:6: note: declared here
+   14 | void init_Adder(){
+      |      ^~~~~~~~~~
+'Finished building: ../src/Adder.c'
+' '
+'Building target: Adder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702_advanced/axi_lite/export/axi_lite/sw/axi_lite/standalone_domain/bsplib/lib -o "Adder.elf"  ./src/Adder.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Adder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Adder.elf  |tee "Adder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75999	   2568	  22672	 101239	  18b77	Adder.elf
+'Finished building: Adder.elf.size'
+' '
+
+09:15:24 Build Finished (took 609ms)
+

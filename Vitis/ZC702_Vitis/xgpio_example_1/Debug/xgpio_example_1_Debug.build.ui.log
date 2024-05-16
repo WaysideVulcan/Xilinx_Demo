@@ -1,0 +1,25 @@
+2024-04-29T20:18:46.597691200255-20:18:46 **** Build of configuration Debug for project xgpio_example_1 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/xgpio_example.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bspinclude/include -MMD -MP -MF"src/xgpio_example.d" -MT"src/xgpio_example.o" -o "src/xgpio_example.o" "../src/xgpio_example.c"
+000-'Finished building: ../src/xgpio_example.c'
+000-' '
+000-'Building target: xgpio_example_1.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_gpio/export/zc702_gpio/sw/zc702_gpio/standalone_domain/bsplib/lib -o "xgpio_example_1.elf"  ./src/xgpio_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: xgpio_example_1.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size xgpio_example_1.elf  |tee "xgpio_example_1.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  23561	   1160	  22600	  47321	   b8d9	xgpio_example_1.elf
+000-'Finished building: xgpio_example_1.elf.size'
+000-' '
+00255-
+20:18:47 Build Finished (took 541ms)
+

@@ -1,0 +1,12 @@
+/* C:/Users/User/AppData/Local/Temp/bootgen_cpu0_uart_system17617836434881140538/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*amp_test*/
+the_ROM_image:
+{
+ [bootloader] C:/vi/z702/amp_test/export/amp_test/sw/amp_test/boot/fsbl.elf
+ C:/vi/z702/cpu0_uart/_ide/bitstream/design_1_wrapper.bit
+ C:/vi/z702/cpu0_uart/Debug/cpu0_uart.elf
+}

@@ -1,0 +1,72 @@
+16:59:25 **** Incremental Build of configuration Debug for project plgpio ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:7:
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:48: error: 'AXI_GPIO_INTERRUPT_ID' undeclared (first use in this function); did you mean 'INTC_GPIO_INTERRUPT_ID'?
+   51 |         SetupInterruptSystem(&Intc, &AXI_Gpio, AXI_GPIO_INTERRUPT_ID);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                                INTC_GPIO_INTERRUPT_ID
+../src/helloworld.c:51:48: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:51:37: warning: passing argument 2 of 'SetupInterruptSystem' from incompatible pointer type [-Wincompatible-pointer-types]
+   51 |         SetupInterruptSystem(&Intc, &AXI_Gpio, AXI_GPIO_INTERRUPT_ID);
+      |                                     ^~~~~~~~~
+      |                                     |
+      |                                     XGpio *
+../src/helloworld.c:27:51: note: expected 'XGpioPs *' but argument is of type 'XGpio *'
+   27 | void SetupInterruptSystem(XScuGic *Intc, XGpioPs *Gpio, u16 GpioIntrId);
+      |                                          ~~~~~~~~~^~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:71:6: error: conflicting types for 'SetupInterruptSystem'; have 'void(XScuGic *, XGpio *, u16)' {aka 'void(XScuGic *, XGpio *, short unsigned int)'}
+   71 | void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpio *AXI_Gpio,
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:27:6: note: previous declaration of 'SetupInterruptSystem' with type 'void(XScuGic *, XGpioPs *, u16)' {aka 'void(XScuGic *, XGpioPs *, short unsigned int)'}
+   27 | void SetupInterruptSystem(XScuGic *Intc, XGpioPs *Gpio, u16 GpioIntrId);
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SetupInterruptSystem':
+../src/helloworld.c:92:40: error: 'GICInstancePtr' undeclared (first use in this function); did you mean 'GicInstancePtr'?
+   92 |         XScuGic_SetPriorityTriggerType(GICInstancePtr, AXI_GpioIntrId,
+      |                                        ^~~~~~~~~~~~~~
+      |                                        GicInstancePtr
+../src/helloworld.c:95:37: warning: passing argument 1 of 'XGpio_InterruptGlobalEnable' from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |         XGpio_InterruptGlobalEnable(&AXI_Gpio);
+      |                                     ^~~~~~~~~
+      |                                     |
+      |                                     XGpio **
+In file included from ../src/helloworld.c:5:
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xgpio.h:182:41: note: expected 'XGpio *' but argument is of type 'XGpio **'
+  182 | void XGpio_InterruptGlobalEnable(XGpio *InstancePtr);
+      |                                  ~~~~~~~^~~~~~~~~~~
+../src/helloworld.c:96:28: warning: passing argument 1 of 'XGpioPs_IntrEnable' from incompatible pointer type [-Wincompatible-pointer-types]
+   96 |         XGpioPs_IntrEnable(&AXI_Gpio, 0x00000001);
+      |                            ^~~~~~~~~
+      |                            |
+      |                            XGpio **
+In file included from ../src/helloworld.c:4:
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xgpiops.h:243:40: note: expected 'const XGpioPs *' but argument is of type 'XGpio **'
+  243 | void XGpioPs_IntrEnable(const XGpioPs *InstancePtr, u8 Bank, u32 Mask);
+      |                         ~~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/helloworld.c:96:9: error: too few arguments to function 'XGpioPs_IntrEnable'
+   96 |         XGpioPs_IntrEnable(&AXI_Gpio, 0x00000001);
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:4:
+C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/standalone_domain/bspinclude/include/xgpiops.h:243:6: note: declared here
+  243 | void XGpioPs_IntrEnable(const XGpioPs *InstancePtr, u8 Bank, u32 Mask);
+      |      ^~~~~~~~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+
+16:59:26 Build Finished (took 338ms)
+

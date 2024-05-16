@@ -1,0 +1,65 @@
+{
+  "sampleCount": 10203,
+  "entries": [
+    {
+      "addr": 1050664,
+      "name": "XTime_GetTime",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil_io.h",
+      "fileBase": "xil_io.h",
+      "line": 136,
+      "count": 9135,
+      "total": 16371.724,
+      "callerMap": {
+        "1050664": 7236.0,
+        "1050764": 9135.724
+      },
+      "calleeMap": {
+        "1050664": 7236.7236
+      }
+    },
+    {
+      "addr": 1050408,
+      "name": "_start",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/xil-crt0.S",
+      "fileBase": "xil-crt0.S",
+      "line": 61,
+      "count": 0,
+      "total": 10206.678,
+      "callerMap": {},
+      "calleeMap": {
+        "1050012": 10206.678
+      }
+    },
+    {
+      "addr": 1050012,
+      "name": "main",
+      "fileFull": "C:\\vi\\z702\\breathLed\\Debug/../src/helloworld.c",
+      "fileBase": "helloworld.c",
+      "line": 14,
+      "count": 0,
+      "total": 10205.657,
+      "callerMap": {
+        "1050408": 10205.657
+      },
+      "calleeMap": {
+        "1050764": 10205.657
+      }
+    },
+    {
+      "addr": 1050764,
+      "name": "sleep_A9",
+      "fileFull": "C:\\vi\\z702\\custom_led\\ps7_cortexa9_0\\standalone_domain\\bsp\\ps7_cortexa9_0\\libsrc\\standalone_v8_0\\src/sleep.c",
+      "fileBase": "sleep.c",
+      "line": 57,
+      "count": 1068,
+      "total": 10204.636,
+      "callerMap": {
+        "1050012": 10204.636
+      },
+      "calleeMap": {
+        "1050664": 9136.636
+      }
+    }
+  ],
+  "stackTrace": true
+}

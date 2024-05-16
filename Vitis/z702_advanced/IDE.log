@@ -1,0 +1,691 @@
+09:58:59 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+09:59:01 INFO  : Registering command handlers for Vitis TCF services
+09:59:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+09:59:02 INFO  : Platform repository initialization has completed.
+09:59:04 INFO  : XSCT server has started successfully.
+09:59:04 INFO  : plnx-install-location is set to ''
+09:59:07 INFO  : Successfully done setting XSCT server connection channel  
+09:59:07 INFO  : Successfully done query RDI_DATADIR 
+09:59:07 INFO  : Successfully done setting workspace for the tool. 
+10:15:29 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+10:15:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+10:15:31 INFO  : Registering command handlers for Vitis TCF services
+10:15:32 INFO  : Platform repository initialization has completed.
+10:15:34 INFO  : XSCT server has started successfully.
+10:15:34 INFO  : Successfully done setting XSCT server connection channel  
+10:15:36 INFO  : plnx-install-location is set to ''
+10:15:36 INFO  : Successfully done setting workspace for the tool. 
+10:15:36 INFO  : Successfully done query RDI_DATADIR 
+10:16:03 INFO  : Result from executing command 'getProjects': bram
+10:16:03 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+10:16:22 INFO  : Result from executing command 'getProjects': bram
+10:16:22 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+10:18:39 INFO  : Checking for BSP changes to sync application flags for project 'rw_test'...
+10:21:00 INFO  : Checking for BSP changes to sync application flags for project 'rw_test'...
+10:21:23 INFO  : Checking for BSP changes to sync application flags for project 'rw_test'...
+13:08:03 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+13:08:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+13:08:06 INFO  : XSCT server has started successfully.
+13:08:06 INFO  : Successfully done setting XSCT server connection channel  
+13:08:06 INFO  : plnx-install-location is set to ''
+13:08:06 INFO  : Registering command handlers for Vitis TCF services
+13:08:06 INFO  : Successfully done setting workspace for the tool. 
+13:08:06 INFO  : Successfully done query RDI_DATADIR 
+13:08:06 INFO  : Platform repository initialization has completed.
+13:09:03 INFO  : Result from executing command 'getProjects': bram;ddr
+13:09:03 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+13:09:22 INFO  : Result from executing command 'getProjects': bram;ddr
+13:09:22 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+13:36:34 INFO  : Result from executing command 'getProjects': bram;ddr
+13:36:34 INFO  : Result from executing command 'getPlatforms': ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+13:36:35 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+13:36:52 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+13:37:19 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+13:38:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:18 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+13:38:18 INFO  : 'jtag frequency' command is executed.
+13:38:18 INFO  : Context for 'APU' is selected.
+13:38:18 INFO  : System reset is completed.
+13:38:21 INFO  : 'after 3000' command is executed.
+13:38:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+13:38:24 INFO  : Device configured successfully with "C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit"
+13:38:24 INFO  : Context for 'APU' is selected.
+13:38:24 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa'.
+13:38:24 INFO  : 'configparams force-mem-access 1' command is executed.
+13:38:24 INFO  : Context for 'APU' is selected.
+13:38:24 INFO  : Sourcing of 'C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl' is done.
+13:38:24 INFO  : 'ps7_init' command is executed.
+13:38:24 INFO  : 'ps7_post_config' command is executed.
+13:38:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:24 INFO  : The application 'C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:38:24 INFO  : 'configparams force-mem-access 0' command is executed.
+13:38:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:38:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:25 INFO  : 'con' command is executed.
+13:38:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:38:25 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\ddr_test_system\_ide\scripts\systemdebugger_ddr_test_system_standalone.tcl'
+13:38:51 INFO  : Disconnected from the channel tcfchan#5.
+13:38:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:51 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+13:38:51 INFO  : 'jtag frequency' command is executed.
+13:38:51 INFO  : Context for 'APU' is selected.
+13:38:51 INFO  : System reset is completed.
+13:38:54 INFO  : 'after 3000' command is executed.
+13:38:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+13:38:57 INFO  : Device configured successfully with "C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit"
+13:38:57 INFO  : Context for 'APU' is selected.
+13:38:57 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa'.
+13:38:57 INFO  : 'configparams force-mem-access 1' command is executed.
+13:38:57 INFO  : Context for 'APU' is selected.
+13:38:57 INFO  : Sourcing of 'C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl' is done.
+13:38:57 INFO  : 'ps7_init' command is executed.
+13:38:57 INFO  : 'ps7_post_config' command is executed.
+13:38:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:57 INFO  : The application 'C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:38:57 INFO  : 'configparams force-mem-access 0' command is executed.
+13:38:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:38:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:57 INFO  : 'con' command is executed.
+13:38:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:38:57 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\ddr_test_system\_ide\scripts\systemdebugger_ddr_test_system_standalone.tcl'
+13:44:32 INFO  : Disconnected from the channel tcfchan#6.
+13:44:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:44:32 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+13:44:32 INFO  : 'jtag frequency' command is executed.
+13:44:32 INFO  : Context for 'APU' is selected.
+13:44:32 INFO  : System reset is completed.
+13:44:35 INFO  : 'after 3000' command is executed.
+13:44:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+13:44:38 INFO  : Device configured successfully with "C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit"
+13:44:38 INFO  : Context for 'APU' is selected.
+13:44:38 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa'.
+13:44:38 INFO  : 'configparams force-mem-access 1' command is executed.
+13:44:38 INFO  : Context for 'APU' is selected.
+13:44:38 INFO  : Sourcing of 'C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl' is done.
+13:44:38 INFO  : 'ps7_init' command is executed.
+13:44:38 INFO  : 'ps7_post_config' command is executed.
+13:44:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:44:38 INFO  : The application 'C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:44:38 INFO  : 'configparams force-mem-access 0' command is executed.
+13:44:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:44:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:44:38 INFO  : 'con' command is executed.
+13:44:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:44:38 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\ddr_test_system\_ide\scripts\systemdebugger_ddr_test_system_standalone.tcl'
+13:56:27 INFO  : Hardware specification for platform project 'ddr' is updated.
+13:56:56 INFO  : Result from executing command 'getProjects': bram;ddr
+13:56:56 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+13:56:57 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+13:57:05 INFO  : The hardware specification used by project 'ddr_test' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+13:57:05 INFO  : The file 'C:\vi\z702_advanced\ddr_test\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+13:57:05 INFO  : The updated bitstream files are copied from platform to folder 'C:\vi\z702_advanced\ddr_test\_ide\bitstream' in project 'ddr_test'.
+13:57:05 INFO  : The file 'C:\vi\z702_advanced\ddr_test\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:57:10 INFO  : The updated ps init files are copied from platform to folder 'C:\vi\z702_advanced\ddr_test\_ide\psinit' in project 'ddr_test'.
+13:57:44 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+13:57:55 INFO  : Disconnected from the channel tcfchan#7.
+13:57:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:57:55 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+13:57:55 INFO  : 'jtag frequency' command is executed.
+13:57:55 INFO  : Context for 'APU' is selected.
+13:57:55 INFO  : System reset is completed.
+13:57:58 INFO  : 'after 3000' command is executed.
+13:57:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+13:58:00 INFO  : Device configured successfully with "C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit"
+13:58:01 INFO  : Context for 'APU' is selected.
+13:58:01 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa'.
+13:58:01 INFO  : 'configparams force-mem-access 1' command is executed.
+13:58:01 INFO  : Context for 'APU' is selected.
+13:58:01 INFO  : Sourcing of 'C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl' is done.
+13:58:01 INFO  : 'ps7_init' command is executed.
+13:58:01 INFO  : 'ps7_post_config' command is executed.
+13:58:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:01 INFO  : The application 'C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:58:01 INFO  : 'configparams force-mem-access 0' command is executed.
+13:58:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:58:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:01 INFO  : 'con' command is executed.
+13:58:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:58:01 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\ddr_test_system\_ide\scripts\systemdebugger_ddr_test_system_standalone.tcl'
+14:30:34 INFO  : Hardware specification for platform project 'ddr' is updated.
+14:34:50 INFO  : Result from executing command 'getProjects': bram;ddr
+14:34:50 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+14:34:55 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+14:35:03 INFO  : The hardware specification used by project 'ddr_test' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+14:35:03 INFO  : The file 'C:\vi\z702_advanced\ddr_test\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+14:35:03 INFO  : The updated bitstream files are copied from platform to folder 'C:\vi\z702_advanced\ddr_test\_ide\bitstream' in project 'ddr_test'.
+14:35:03 INFO  : The file 'C:\vi\z702_advanced\ddr_test\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:35:10 INFO  : The updated ps init files are copied from platform to folder 'C:\vi\z702_advanced\ddr_test\_ide\psinit' in project 'ddr_test'.
+14:41:26 INFO  : Checking for BSP changes to sync application flags for project 'ddr_test'...
+14:41:47 INFO  : Disconnected from the channel tcfchan#11.
+14:41:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:47 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+14:41:47 INFO  : 'jtag frequency' command is executed.
+14:41:48 INFO  : Context for 'APU' is selected.
+14:41:48 INFO  : System reset is completed.
+14:41:51 INFO  : 'after 3000' command is executed.
+14:41:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+14:41:53 INFO  : Device configured successfully with "C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit"
+14:41:53 INFO  : Context for 'APU' is selected.
+14:41:53 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa'.
+14:41:53 INFO  : 'configparams force-mem-access 1' command is executed.
+14:41:53 INFO  : Context for 'APU' is selected.
+14:41:53 INFO  : Sourcing of 'C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl' is done.
+14:41:54 INFO  : 'ps7_init' command is executed.
+14:41:54 INFO  : 'ps7_post_config' command is executed.
+14:41:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:54 INFO  : The application 'C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:54 INFO  : 'configparams force-mem-access 0' command is executed.
+14:41:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:41:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:54 INFO  : 'con' command is executed.
+14:41:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:41:54 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\ddr_test_system\_ide\scripts\systemdebugger_ddr_test_system_standalone.tcl'
+15:04:09 INFO  : Disconnected from the channel tcfchan#15.
+15:04:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:10 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+15:04:10 ERROR : port closed
+15:04:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:04:10 ERROR : port closed
+15:04:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:15 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+15:04:15 INFO  : 'jtag frequency' command is executed.
+15:04:15 INFO  : Context for 'APU' is selected.
+15:04:15 INFO  : System reset is completed.
+15:04:18 INFO  : 'after 3000' command is executed.
+15:04:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+15:04:21 INFO  : Device configured successfully with "C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit"
+15:04:21 INFO  : Context for 'APU' is selected.
+15:04:21 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa'.
+15:04:21 INFO  : 'configparams force-mem-access 1' command is executed.
+15:04:21 INFO  : Context for 'APU' is selected.
+15:04:21 INFO  : Sourcing of 'C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl' is done.
+15:04:21 INFO  : 'ps7_init' command is executed.
+15:04:21 INFO  : 'ps7_post_config' command is executed.
+15:04:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:21 INFO  : The application 'C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:04:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:04:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/ddr/export/ddr/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/ddr_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:04:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:21 INFO  : 'con' command is executed.
+15:04:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:04:21 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\ddr_test_system\_ide\scripts\debugger_ddr_test-default.tcl'
+15:18:35 INFO  : Disconnected from the channel tcfchan#16.
+17:56:43 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+17:56:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+17:56:47 INFO  : XSCT server has started successfully.
+17:56:47 INFO  : Successfully done setting XSCT server connection channel  
+17:56:47 INFO  : plnx-install-location is set to ''
+17:56:47 INFO  : Successfully done setting workspace for the tool. 
+17:56:47 INFO  : Successfully done query RDI_DATADIR 
+17:56:47 INFO  : Registering command handlers for Vitis TCF services
+17:56:48 INFO  : Platform repository initialization has completed.
+18:01:24 INFO  : Result from executing command 'getProjects': bram;ddr;dma
+18:01:24 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+18:01:45 INFO  : Result from executing command 'getProjects': bram;ddr;dma
+18:01:45 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;dma|C:/vi/z702_advanced/dma/export/dma/dma.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+18:04:58 INFO  : Example project xaxidma_example_simple_intr_1 has been created successfully.
+18:05:03 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_intr_1'...
+18:05:26 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_intr_1'...
+18:06:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:38 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+18:06:38 INFO  : 'jtag frequency' command is executed.
+18:06:38 INFO  : Context for 'APU' is selected.
+18:06:38 INFO  : System reset is completed.
+18:06:41 INFO  : 'after 3000' command is executed.
+18:06:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+18:06:44 INFO  : Device configured successfully with "C:/vi/z702_advanced/xaxidma_example_simple_intr_1/_ide/bitstream/design_1_wrapper.bit"
+18:06:44 INFO  : Context for 'APU' is selected.
+18:06:44 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/dma/export/dma/hw/design_1_wrapper.xsa'.
+18:06:44 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:44 INFO  : Context for 'APU' is selected.
+18:06:44 INFO  : Sourcing of 'C:/vi/z702_advanced/xaxidma_example_simple_intr_1/_ide/psinit/ps7_init.tcl' is done.
+18:06:44 INFO  : 'ps7_init' command is executed.
+18:06:44 INFO  : 'ps7_post_config' command is executed.
+18:06:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:45 INFO  : The application 'C:/vi/z702_advanced/xaxidma_example_simple_intr_1/Debug/xaxidma_example_simple_intr_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:06:45 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/xaxidma_example_simple_intr_1/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/dma/export/dma/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/xaxidma_example_simple_intr_1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/xaxidma_example_simple_intr_1/Debug/xaxidma_example_simple_intr_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:45 INFO  : 'con' command is executed.
+18:06:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:06:45 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\xaxidma_example_simple_intr_1_system\_ide\scripts\systemdebugger_xaxidma_example_simple_intr_1_system_standalone.tcl'
+18:08:12 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+18:20:12 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+18:21:50 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_intr_1'...
+18:22:20 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+18:33:48 INFO  : Checking for BSP changes to sync application flags for project 'xaxidma_example_simple_intr_1'...
+18:33:55 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:13:56 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:14:39 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:15:37 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:16:26 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:19:20 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:19:58 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:20:07 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:20:58 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:23:31 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:25:27 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:26:47 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:26:55 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:29:24 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:52:36 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:53:39 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:54:24 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:54:42 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:55:00 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:55:23 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:55:48 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:56:34 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+10:59:14 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:05:32 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:05:56 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:07:13 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:08:04 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:08:14 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:16:12 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:20:44 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:21:54 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:22:25 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:23:47 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:24:28 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:24:54 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+11:27:30 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:08:17 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:08:37 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:09:48 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:10:23 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:16:31 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:16:52 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:18:10 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:21:29 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:21:54 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:24:07 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:25:06 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:26:01 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:27:15 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+15:35:39 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+23:59:41 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:00:46 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:05:55 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:07:36 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:08:05 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:09:12 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:10:37 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:10:51 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+00:11:51 INFO  : Checking for BSP changes to sync application flags for project 'dma_test'...
+09:12:45 INFO  : Disconnected from the channel tcfchan#4.
+18:24:51 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+18:24:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+18:24:54 INFO  : XSCT server has started successfully.
+18:24:54 INFO  : plnx-install-location is set to ''
+18:24:54 INFO  : Successfully done setting XSCT server connection channel  
+18:24:54 INFO  : Successfully done setting workspace for the tool. 
+18:24:54 INFO  : Successfully done query RDI_DATADIR 
+18:24:54 INFO  : Registering command handlers for Vitis TCF services
+18:24:55 INFO  : Platform repository initialization has completed.
+18:25:42 INFO  : Result from executing command 'getProjects': axi_lite;bram;ddr;dma
+18:25:42 INFO  : Result from executing command 'getPlatforms': bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;dma|C:/vi/z702_advanced/dma/export/dma/dma.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+18:26:03 INFO  : Result from executing command 'getProjects': axi_lite;bram;ddr;dma
+18:26:03 INFO  : Result from executing command 'getPlatforms': axi_lite|C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+18:30:23 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+18:30:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+18:30:26 INFO  : XSCT server has started successfully.
+18:30:26 INFO  : plnx-install-location is set to ''
+18:30:26 INFO  : Successfully done setting XSCT server connection channel  
+18:30:26 INFO  : Successfully done setting workspace for the tool. 
+18:30:26 INFO  : Successfully done query RDI_DATADIR 
+18:30:26 INFO  : Registering command handlers for Vitis TCF services
+18:30:27 INFO  : Platform repository initialization has completed.
+18:31:57 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+18:31:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+18:32:00 INFO  : XSCT server has started successfully.
+18:32:00 INFO  : Successfully done setting XSCT server connection channel  
+18:32:00 INFO  : plnx-install-location is set to ''
+18:32:00 INFO  : Successfully done setting workspace for the tool. 
+18:32:00 INFO  : Successfully done query RDI_DATADIR 
+18:32:01 INFO  : Registering command handlers for Vitis TCF services
+18:32:01 INFO  : Platform repository initialization has completed.
+18:33:04 INFO  : Result from executing command 'getProjects': axi_lite;bram;ddr;dma
+18:33:04 INFO  : Result from executing command 'getPlatforms': axi_lite|C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm;bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;dma|C:/vi/z702_advanced/dma/export/dma/dma.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+18:33:05 INFO  : Checking for BSP changes to sync application flags for project 'Adder'...
+09:02:19 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+09:02:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+09:02:24 INFO  : Registering command handlers for Vitis TCF services
+09:02:25 INFO  : XSCT server has started successfully.
+09:02:25 INFO  : Platform repository initialization has completed.
+09:02:30 INFO  : Successfully done setting XSCT server connection channel  
+09:02:30 INFO  : plnx-install-location is set to ''
+09:02:30 INFO  : Successfully done query RDI_DATADIR 
+09:02:30 INFO  : Successfully done setting workspace for the tool. 
+09:06:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:06:49 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+09:06:49 INFO  : 'jtag frequency' command is executed.
+09:06:49 INFO  : Context for 'APU' is selected.
+09:06:49 INFO  : System reset is completed.
+09:06:52 INFO  : 'after 3000' command is executed.
+09:06:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+09:06:55 INFO  : Device configured successfully with "C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit"
+09:06:55 INFO  : Context for 'APU' is selected.
+09:06:55 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa'.
+09:06:55 INFO  : 'configparams force-mem-access 1' command is executed.
+09:06:55 INFO  : Context for 'APU' is selected.
+09:06:55 INFO  : Sourcing of 'C:/vi/z702_advanced/Adder/_ide/psinit/ps7_init.tcl' is done.
+09:06:55 INFO  : 'ps7_init' command is executed.
+09:06:55 INFO  : 'ps7_post_config' command is executed.
+09:06:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:06:55 INFO  : The application 'C:/vi/z702_advanced/Adder/Debug/Adder.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:06:55 INFO  : 'configparams force-mem-access 0' command is executed.
+09:06:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/Adder/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/Adder/Debug/Adder.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:06:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:06:55 INFO  : 'con' command is executed.
+09:06:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:06:55 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\Adder_system\_ide\scripts\systemdebugger_adder_system_standalone.tcl'
+09:08:30 INFO  : Checking for BSP changes to sync application flags for project 'Adder'...
+09:08:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa is already opened
+
+09:08:42 INFO  : Disconnected from the channel tcfchan#1.
+09:08:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:08:42 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+09:08:42 INFO  : 'jtag frequency' command is executed.
+09:08:42 INFO  : Context for 'APU' is selected.
+09:08:42 INFO  : System reset is completed.
+09:08:45 INFO  : 'after 3000' command is executed.
+09:08:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+09:08:47 INFO  : Device configured successfully with "C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit"
+09:08:47 INFO  : Context for 'APU' is selected.
+09:08:49 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa'.
+09:08:49 INFO  : 'configparams force-mem-access 1' command is executed.
+09:08:49 INFO  : Context for 'APU' is selected.
+09:08:50 INFO  : Sourcing of 'C:/vi/z702_advanced/Adder/_ide/psinit/ps7_init.tcl' is done.
+09:08:50 INFO  : 'ps7_init' command is executed.
+09:08:50 INFO  : 'ps7_post_config' command is executed.
+09:08:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:08:50 INFO  : The application 'C:/vi/z702_advanced/Adder/Debug/Adder.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:08:50 INFO  : 'configparams force-mem-access 0' command is executed.
+09:08:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/Adder/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/Adder/Debug/Adder.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:08:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:08:50 INFO  : 'con' command is executed.
+09:08:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:08:50 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\Adder_system\_ide\scripts\systemdebugger_adder_system_standalone.tcl'
+09:11:38 INFO  : Checking for BSP changes to sync application flags for project 'Adder'...
+09:11:54 INFO  : Checking for BSP changes to sync application flags for project 'Adder'...
+09:11:58 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa is already opened
+
+09:15:23 INFO  : Checking for BSP changes to sync application flags for project 'Adder'...
+09:15:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa is already opened
+
+09:15:46 INFO  : Disconnected from the channel tcfchan#3.
+09:15:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:15:47 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A01E79A' is selected.
+09:15:47 INFO  : 'jtag frequency' command is executed.
+09:15:47 INFO  : Context for 'APU' is selected.
+09:15:47 INFO  : System reset is completed.
+09:15:50 INFO  : 'after 3000' command is executed.
+09:15:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}' command is executed.
+09:15:52 INFO  : Device configured successfully with "C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit"
+09:15:52 INFO  : Context for 'APU' is selected.
+09:15:54 INFO  : Hardware design and registers information is loaded from 'C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa'.
+09:15:54 INFO  : 'configparams force-mem-access 1' command is executed.
+09:15:54 INFO  : Context for 'APU' is selected.
+09:15:54 INFO  : Sourcing of 'C:/vi/z702_advanced/Adder/_ide/psinit/ps7_init.tcl' is done.
+09:15:55 INFO  : 'ps7_init' command is executed.
+09:15:55 INFO  : 'ps7_post_config' command is executed.
+09:15:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:15:55 INFO  : The application 'C:/vi/z702_advanced/Adder/Debug/Adder.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:15:55 INFO  : 'configparams force-mem-access 0' command is executed.
+09:15:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A01E79A" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203A01E79A-23727093-0"}
+fpga -file C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/vi/z702_advanced/axi_lite/export/axi_lite/hw/Adder_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/vi/z702_advanced/Adder/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/vi/z702_advanced/Adder/Debug/Adder.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:15:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:15:55 INFO  : 'con' command is executed.
+09:15:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:15:55 INFO  : Launch script is exported to file 'C:\vi\z702_advanced\Adder_system\_ide\scripts\systemdebugger_adder_system_standalone.tcl'
+13:24:31 INFO  : Disconnected from the channel tcfchan#6.
+11:05:56 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+11:05:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+11:05:59 INFO  : Registering command handlers for Vitis TCF services
+11:06:00 INFO  : XSCT server has started successfully.
+11:06:00 INFO  : Platform repository initialization has completed.
+11:06:02 INFO  : Successfully done setting XSCT server connection channel  
+11:06:02 INFO  : plnx-install-location is set to ''
+11:06:02 INFO  : Successfully done query RDI_DATADIR 
+11:06:02 INFO  : Successfully done setting workspace for the tool. 
+11:16:57 INFO  : Result from executing command 'getProjects': axi_lite;bram;ddr;dma;hdmi
+11:16:57 INFO  : Result from executing command 'getPlatforms': axi_lite|C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm;bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;dma|C:/vi/z702_advanced/dma/export/dma/dma.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+11:17:21 INFO  : Result from executing command 'getProjects': axi_lite;bram;ddr;dma;hdmi
+11:17:21 INFO  : Result from executing command 'getPlatforms': axi_lite|C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm;bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;dma|C:/vi/z702_advanced/dma/export/dma/dma.xpfm;hdmi|C:/vi/z702_advanced/hdmi/export/hdmi/hdmi.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+11:20:05 INFO  : Checking for BSP changes to sync application flags for project 'hdmi_1080p'...
+11:21:06 INFO  : Checking for BSP changes to sync application flags for project 'hdmi_1080p'...
+11:25:27 DEBUG : Logs will be stored at 'C:/vi/z702_advanced/IDE.log'.
+11:25:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vi\z702_advanced\temp_xsdb_launch_script.tcl
+11:25:29 INFO  : Registering command handlers for Vitis TCF services
+11:25:29 INFO  : XSCT server has started successfully.
+11:25:29 INFO  : plnx-install-location is set to ''
+11:25:29 INFO  : Successfully done setting XSCT server connection channel  
+11:25:30 INFO  : Successfully done setting workspace for the tool. 
+11:25:30 INFO  : Successfully done query RDI_DATADIR 
+11:25:30 INFO  : Platform repository initialization has completed.
+11:35:03 INFO  : Result from executing command 'getProjects': axi_lite;bram;ddr;dma;hdmi
+11:35:03 INFO  : Result from executing command 'getPlatforms': axi_lite|C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm;bram|C:/vi/z702_advanced/bram/export/bram/bram.xpfm;ddr|C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm;dma|C:/vi/z702_advanced/dma/export/dma/dma.xpfm;hdmi|C:/vi/z702_advanced/hdmi/export/hdmi/hdmi.xpfm;xilinx_vck190_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+11:35:04 INFO  : Checking for BSP changes to sync application flags for project 'hdmi_1080p'...

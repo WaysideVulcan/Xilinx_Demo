@@ -1,0 +1,25 @@
+17:20:22 **** Build of configuration Debug for project xuartps_selftest_example_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/xuartps_selftest_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_selftest_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bspinclude/include -MMD -MP -MF"src/xuartps_selftest_example.d" -MT"src/xuartps_selftest_example.o" -o "src/xuartps_selftest_example.o" "../src/xuartps_selftest_example.c"
+'Finished building: ../src/xuartps_selftest_example.c'
+' '
+'Building target: xuartps_selftest_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bsplib/lib -o "xuartps_selftest_example_1.elf"  ./src/xuartps_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xuartps_selftest_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size xuartps_selftest_example_1.elf  |tee "xuartps_selftest_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30059	   1192	  22680	  53931	   d2ab	xuartps_selftest_example_1.elf
+'Finished building: xuartps_selftest_example_1.elf.size'
+' '
+
+17:20:23 Build Finished (took 742ms)
+

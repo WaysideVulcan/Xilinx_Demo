@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN AR40 [get_ports rst_n]
+set_property PACKAGE_PIN AM39 [get_ports {led[0]}]
+set_property PACKAGE_PIN AN39 [get_ports {led[1]}]
+set_property PACKAGE_PIN AR37 [get_ports {led[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports rst_n]

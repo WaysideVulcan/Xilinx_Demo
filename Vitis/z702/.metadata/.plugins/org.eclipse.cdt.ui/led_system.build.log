@@ -1,0 +1,9 @@
+09:33:51 **** Build of configuration Debug for project led_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 61419 C:/vi/z702/mio/export/mio/mio.xpfm standalone_domain C:/vi/z702/led_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702/mio/export/mio/mio.xpfm --sys_config mio --bif C:/vi/z702/led_system/Debug/system.bif --no_bitstream --elf C:/vi/z702/led/Debug/led.elf,ps7_cortexa9_0
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image C:/vi/z702/led_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+09:33:57 Build Finished (took 5s.769ms)
+

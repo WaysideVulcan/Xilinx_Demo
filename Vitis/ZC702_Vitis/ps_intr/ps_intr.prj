@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ps_intr" location="C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/ps_intr" platform="C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/zc702_irq.xpfm" platformUID="xilinx:zc702::0.0(custom)" systemProject="ps_intr_system" sysConfig="zc702_irq" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="2fa170f4de1e5856c1075a2f1c61ec14">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.656883236">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2088204159" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

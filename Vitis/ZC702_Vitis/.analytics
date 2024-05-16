@@ -1,0 +1,46 @@
+timestamp=[2024-04-29 20:15:25], mode=WORKBENCH_START, duration=0:02:05.560, duration_ms=125560, data={}
+timestamp=[2024-04-29 20:15:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.014, duration_ms=14, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-04-29 20:15:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.810, duration_ms=810, data={}
+timestamp=[2024-04-29 20:16:33], mode=PLATFORM_CREATION, duration=0:00:09.008, duration_ms=9008, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2024-04-29 20:16:49], mode=PLATFORM_GENERATION, duration=0:00:10.161, duration_ms=10161, data={name=zc702_gpio}
+timestamp=[2024-04-29 20:18:20], mode=APP_CREATION, duration=0:00:05.506, duration_ms=5506, data={name=xgpio_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_gpio, application_type=application}
+timestamp=[2024-04-29 20:18:39], mode=APP_CREATION, duration=0:00:03.829, duration_ms=3829, data={name=xgpiops_intr_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_gpio, application_type=application}
+timestamp=[2024-04-29 20:18:42], mode=BUILD, duration=0:00:00.677, duration_ms=677, data={name=xgpiops_intr_example_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 20:18:46], mode=BUILD, duration=0:00:03.492, duration_ms=3492, data={name=xgpiops_intr_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 20:18:47], mode=BUILD, duration=0:00:00.548, duration_ms=548, data={name=xgpio_example_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 20:18:50], mode=BUILD, duration=0:00:03.320, duration_ms=3320, data={name=xgpio_example_1_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 20:19:43], mode=APP_CREATION, duration=0:00:04.301, duration_ms=4301, data={name=gpio_w, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_gpio, application_type=application}
+timestamp=[2024-04-29 22:01:49], mode=BUILD, duration=0:00:00.740, duration_ms=740, data={name=gpio_w, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 22:01:52], mode=BUILD, duration=0:00:03.185, duration_ms=3185, data={name=gpio_w_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 22:04:45], mode=APP_CREATION, duration=0:00:04.248, duration_ms=4248, data={name=gpio_r, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_gpio, application_type=application}
+timestamp=[2024-04-29 22:57:25], mode=BUILD, duration=0:00:00.299, duration_ms=299, data={name=gpio_r, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 22:58:51], mode=BUILD, duration=0:00:00.291, duration_ms=291, data={name=gpio_r, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 22:59:39], mode=BUILD, duration=0:00:00.675, duration_ms=675, data={name=gpio_r, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 22:59:42], mode=BUILD, duration=0:00:03.245, duration_ms=3245, data={name=gpio_r_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 23:09:16], mode=APP_CREATION, duration=0:00:04.333, duration_ms=4333, data={name=axi_gpio, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_gpio, application_type=application}
+timestamp=[2024-04-29 23:25:45], mode=BUILD, duration=0:00:00.292, duration_ms=292, data={name=axi_gpio, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 23:26:13], mode=BUILD, duration=0:00:00.296, duration_ms=296, data={name=axi_gpio, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 23:26:20], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=axi_gpio, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 23:26:23], mode=BUILD, duration=0:00:03.224, duration_ms=3224, data={name=axi_gpio_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 22:03:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.889, duration_ms=889, data={}
+timestamp=[2024-04-30 22:04:27], mode=WORKBENCH_START, duration=0:01:00.630, duration_ms=60630, data={}
+timestamp=[2024-04-30 22:04:28], mode=WORKBENCH_UI_INIT, duration=0:00:00.327, duration_ms=327, data={editors_count=5, platform_editors_count=0, projects_count=12, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_gpio,axi_gpio_system,gpio_r,gpio_r_system,gpio_w,gpio_w_system,xgpio_example_1,xgpio_example_1_system,xgpiops_intr_example_1,xgpiops_intr_example_1_system,zc702_gpio}
+timestamp=[2024-04-30 22:05:17], mode=PLATFORM_CREATION, duration=0:00:07.795, duration_ms=7795, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2024-04-30 22:05:46], mode=PLATFORM_GENERATION, duration=0:00:09.760, duration_ms=9760, data={name=zc702_irq}
+timestamp=[2024-04-30 22:11:07], mode=APP_CREATION, duration=0:00:03.725, duration_ms=3725, data={name=ps_intr, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_irq, application_type=application}
+timestamp=[2024-04-30 22:13:15], mode=BUILD, duration=0:00:00.791, duration_ms=791, data={name=ps_intr, configuration=Debug, clean_build=false}
+timestamp=[2024-04-30 22:13:18], mode=BUILD, duration=0:00:03.437, duration_ms=3437, data={name=ps_intr_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-02 09:06:15], mode=WORKBENCH_START, duration=0:00:05.033, duration_ms=5033, data={}
+timestamp=[2024-05-02 09:06:16], mode=WORKBENCH_UI_INIT, duration=0:00:00.685, duration_ms=685, data={editors_count=6, platform_editors_count=0, projects_count=15, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_gpio,axi_gpio_system,gpio_r,gpio_r_system,gpio_w,gpio_w_system,ps_intr,ps_intr_system,xgpio_example_1,xgpio_example_1_system,xgpiops_intr_example_1,xgpiops_intr_example_1_system,zc702_gpio,zc702_irq}
+timestamp=[2024-05-02 09:06:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.983, duration_ms=983, data={}
+timestamp=[2024-05-02 09:17:36], mode=APP_CREATION, duration=0:00:04.198, duration_ms=4198, data={name=pl_intr, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_irq, application_type=application}
+timestamp=[2024-05-02 09:22:33], mode=APP_CREATION, duration=0:00:03.555, duration_ms=3555, data={name=xgpio_intr_tapp_example_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=zc702_irq, application_type=application}
+timestamp=[2024-05-02 09:22:39], mode=PLATFORM_GENERATION, duration=0:00:02.213, duration_ms=2213, data={name=zc702_irq}
+timestamp=[2024-05-02 09:22:40], mode=BUILD, duration=0:00:00.573, duration_ms=573, data={name=xgpio_intr_tapp_example_1, configuration=Debug, clean_build=false}
+timestamp=[2024-05-02 09:58:18], mode=BUILD, duration=0:00:00.762, duration_ms=762, data={name=pl_intr, configuration=Debug, clean_build=false}
+timestamp=[2024-05-02 10:46:31], mode=WORKBENCH_START, duration=0:00:04.121, duration_ms=4121, data={}
+timestamp=[2024-05-02 10:46:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.556, duration_ms=556, data={editors_count=4, platform_editors_count=1, projects_count=19, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_gpio,axi_gpio_system,gpio_r,gpio_r_system,gpio_w,gpio_w_system,pl_intr,pl_intr_system,ps_intr,ps_intr_system,xgpio_example_1,xgpio_example_1_system,xgpio_intr_tapp_example_1,xgpio_intr_tapp_example_1_system,xgpiops_intr_example_1,xgpiops_intr_example_1_system,zc702_gpio,zc702_irq}
+timestamp=[2024-05-02 10:46:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.801, duration_ms=801, data={}
+timestamp=[2024-05-06 17:09:47], mode=WORKBENCH_START, duration=0:00:05.458, duration_ms=5458, data={}
+timestamp=[2024-05-06 17:09:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.660, duration_ms=660, data={editors_count=4, platform_editors_count=1, projects_count=19, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_gpio,axi_gpio_system,gpio_r,gpio_r_system,gpio_w,gpio_w_system,pl_intr,pl_intr_system,ps_intr,ps_intr_system,xgpio_example_1,xgpio_example_1_system,xgpio_intr_tapp_example_1,xgpio_intr_tapp_example_1_system,xgpiops_intr_example_1,xgpiops_intr_example_1_system,zc702_gpio,zc702_irq}
+timestamp=[2024-05-06 17:09:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.951, duration_ms=951, data={}

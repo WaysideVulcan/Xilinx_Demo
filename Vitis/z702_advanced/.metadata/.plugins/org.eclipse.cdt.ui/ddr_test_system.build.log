@@ -1,0 +1,10 @@
+14:41:27 **** Incremental Build of configuration Debug for project ddr_test_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51684 C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm standalone_domain C:/vi/z702_advanced/ddr_test_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702_advanced/ddr/export/ddr/ddr.xpfm --sys_config ddr --bif C:/vi/z702_advanced/ddr_test_system/Debug/system.bif --bitstream C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit --elf C:/vi/z702_advanced/ddr_test/Debug/ddr_test.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/vi/z702_advanced/ddr_test/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/vi/z702_advanced/ddr_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:41:31 Build Finished (took 4s.597ms)
+

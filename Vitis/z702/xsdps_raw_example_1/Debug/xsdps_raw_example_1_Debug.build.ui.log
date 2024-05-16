@@ -1,0 +1,25 @@
+2024-02-01T09:41:36.612356200255-09:41:36 **** Build of configuration Debug for project xsdps_raw_example_1 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/xsdps_raw_example.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsdps_raw_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/sd_card/export/sd_card/sw/sd_card/standalone_domain/bspinclude/include -MMD -MP -MF"src/xsdps_raw_example.d" -MT"src/xsdps_raw_example.o" -o "src/xsdps_raw_example.o" "../src/xsdps_raw_example.c"
+000-'Finished building: ../src/xsdps_raw_example.c'
+000-' '
+000-'Building target: xsdps_raw_example_1.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702/sd_card/export/sd_card/sw/sd_card/standalone_domain/bsplib/lib -o "xsdps_raw_example_1.elf"  ./src/xsdps_raw_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: xsdps_raw_example_1.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size xsdps_raw_example_1.elf  |tee "xsdps_raw_example_1.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  44484	   1208	  44976	  90668	  1622c	xsdps_raw_example_1.elf
+000-'Finished building: xsdps_raw_example_1.elf.size'
+000-' '
+00255-
+09:41:37 Build Finished (took 768ms)
+

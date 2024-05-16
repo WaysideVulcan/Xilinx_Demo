@@ -1,0 +1,32 @@
+09:27:07 **** Incremental Build of configuration Debug for project timer_led ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/timer_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/timer/export/timer/sw/timer/standalone_domain/bspinclude/include -MMD -MP -MF"src/timer_test.d" -MT"src/timer_test.o" -o "src/timer_test.o" "../src/timer_test.c"
+In file included from ../src/timer_test.c:6:
+C:/vi/z702/timer/export/timer/sw/timer/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/vi/z702/timer/export/timer/sw/timer/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/timer_test.c'
+' '
+'Building target: timer_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702/timer/export/timer/sw/timer/standalone_domain/bsplib/lib -o "timer_led.elf"  ./src/platform.o ./src/timer_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_led.elf  |tee "timer_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28480	   1936	  22680	  53096	   cf68	timer_led.elf
+'Finished building: timer_led.elf.size'
+' '
+
+09:27:07 Build Finished (took 580ms)
+

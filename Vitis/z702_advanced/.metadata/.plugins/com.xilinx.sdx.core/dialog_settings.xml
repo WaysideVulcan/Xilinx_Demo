@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="sdx.custom.platform.repository.locations" value="C:\vi\z702_advanced\bram\export\bram;C:\vi\z702_advanced\ddr\export\ddr;C:\vi\z702_advanced\dma\export\dma;C:\vi\z702_advanced\axi_lite\export\axi_lite;C:\vi\z702_advanced\hdmi\export\hdmi"/>
+</section>

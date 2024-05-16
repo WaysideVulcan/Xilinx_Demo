@@ -1,0 +1,69 @@
+Nothing to build in platform 'zc702_irq'
+
+09:58:17 **** Build of configuration Debug for project pl_intr ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/pl_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pl_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include -MMD -MP -MF"src/pl_intr.d" -MT"src/pl_intr.o" -o "src/pl_intr.o" "../src/pl_intr.c"
+In file included from ../src/pl_intr.c:7:
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/pl_intr.c: In function 'main':
+../src/pl_intr.c:45:43: error: 'GPIO_CHANNEL1' undeclared (first use in this function); did you mean 'GPIO_CHANNEL'?
+   45 |         XGpio_SetDataDirection(&AXI_Gpio, GPIO_CHANNEL1, 0x00000001);
+      |                                           ^~~~~~~~~~~~~
+      |                                           GPIO_CHANNEL
+../src/pl_intr.c:45:43: note: each undeclared identifier is reported only once for each function it appears in
+../src/pl_intr.c:15:41: error: 'XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+   15 | #define AXI_GPIO_INTERRUPT_ID           XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pl_intr.c:15:41: note: in definition of macro 'AXI_GPIO_INTERRUPT_ID'
+   15 | #define AXI_GPIO_INTERRUPT_ID           XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pl_intr.c:47:37: warning: passing argument 2 of 'SetupInterruptSystem' from incompatible pointer type [-Wincompatible-pointer-types]
+   47 |         SetupInterruptSystem(&Intc, &AXI_Gpio, AXI_GPIO_INTERRUPT_ID);
+      |                                     ^~~~~~~~~
+      |                                     |
+      |                                     XGpio *
+../src/pl_intr.c:25:51: note: expected 'XGpioPs *' but argument is of type 'XGpio *'
+   25 | void SetupInterruptSystem(XScuGic *Intc, XGpioPs *Gpio, u16 GpioIntrId);
+      |                                          ~~~~~~~~~^~~~
+../src/pl_intr.c:51:25: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   51 |                         if(XGpio_DiscreteRead(&AXI_Gpio, GPIO_CHANNEL1) == 0)
+      |                         ^~
+../src/pl_intr.c:54:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   54 |                                 key = 0;
+      |                                 ^~~
+../src/pl_intr.c: In function 'SetupInterruptSystem':
+../src/pl_intr.c:93:31: warning: passing argument 1 of 'XGpio_InterruptEnable' from incompatible pointer type [-Wincompatible-pointer-types]
+   93 |         XGpio_InterruptEnable(AXI_Gpio, 0x00000001);
+      |                               ^~~~~~~~
+      |                               |
+      |                               XGpioPs *
+In file included from ../src/pl_intr.c:5:
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include/xgpio.h:201:35: note: expected 'XGpio *' but argument is of type 'XGpioPs *'
+  201 | void XGpio_InterruptEnable(XGpio *InstancePtr, u32 Mask);
+      |                            ~~~~~~~^~~~~~~~~~~
+../src/pl_intr.c:94:37: warning: passing argument 1 of 'XGpio_InterruptGlobalEnable' from incompatible pointer type [-Wincompatible-pointer-types]
+   94 |         XGpio_InterruptGlobalEnable(AXI_Gpio);
+      |                                     ^~~~~~~~
+      |                                     |
+      |                                     XGpioPs *
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include/xgpio.h:199:41: note: expected 'XGpio *' but argument is of type 'XGpioPs *'
+  199 | void XGpio_InterruptGlobalEnable(XGpio *InstancePtr);
+      |                                  ~~~~~~~^~~~~~~~~~~
+../src/pl_intr.c: In function 'IntrHandler':
+../src/pl_intr.c:100:9: warning: implicit declaration of function 'XGpio_IntrDisable'; did you mean 'XGpioPs_IntrDisable'? [-Wimplicit-function-declaration]
+  100 |         XGpio_IntrDisable(&AXI_Gpio, 0x00000001);
+      |         ^~~~~~~~~~~~~~~~~
+      |         XGpioPs_IntrDisable
+make[1]: *** [src/subdir.mk:26: src/pl_intr.o] Error 1
+make: *** [makefile:34: all] Error 2

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jul 25 08:54:49 2023
+# Process ID: 452
+# Current directory: C:/Vivadolab/mig_ddr_test/mig_ddr_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21900 C:\Vivadolab\mig_ddr_test\mig_ddr_test\mig_ddr.xpr
+# Log file: C:/Vivadolab/mig_ddr_test/mig_ddr_test/vivado.log
+# Journal file: C:/Vivadolab/mig_ddr_test/mig_ddr_test\vivado.jou
+# Running On: LAPTOP-90IBO783, OS: Windows, CPU Frequency: 1896 MHz, CPU Physical cores: 16, Host memory: 33099 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivadolab/mig_ddr_test/mig_ddr_test/mig_ddr.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Vivadolab/mig_ddr_test/mig_ddr_test/sim_tb_top_behav.wcfg
+source sim_tb_top.tcl
+run 150 us
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Vivadolab/artix7/MIG/project_MIG_test/project_MIG_test.runs/impl_1/mig_test_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+close_sim

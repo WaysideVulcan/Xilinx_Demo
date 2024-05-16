@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="hdmi_1080p" location="C:/vi/z702_advanced/hdmi_1080p" platform="C:/vi/z702_advanced/hdmi/export/hdmi/hdmi.xpfm" platformUID="xilinx:zc702::0.0(custom)" systemProject="hdmi_1080p_system" sysConfig="hdmi" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="e51c2af1da339e998439225741d3ad79">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.661200185">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.999550372" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

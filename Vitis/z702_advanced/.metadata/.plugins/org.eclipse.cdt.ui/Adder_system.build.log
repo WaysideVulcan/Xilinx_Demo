@@ -1,0 +1,10 @@
+09:15:24 **** Incremental Build of configuration Debug for project Adder_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 55542 C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm standalone_domain C:/vi/z702_advanced/Adder_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702_advanced/axi_lite/export/axi_lite/axi_lite.xpfm --sys_config axi_lite --bif C:/vi/z702_advanced/Adder_system/Debug/system.bif --bitstream C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit --elf C:/vi/z702_advanced/Adder/Debug/Adder.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/vi/z702_advanced/Adder/_ide/bitstream/Adder_wrapper.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/vi/z702_advanced/Adder_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+09:15:29 Build Finished (took 4s.433ms)
+

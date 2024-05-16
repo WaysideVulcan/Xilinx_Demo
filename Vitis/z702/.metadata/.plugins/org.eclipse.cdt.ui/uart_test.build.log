@@ -1,0 +1,22 @@
+15:52:34 **** Incremental Build of configuration Debug for project uart_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/uart_loop/export/uart_loop/sw/uart_loop/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'uart_init':
+../src/helloworld.c:15:39: error: 'DeviceId' undeclared (first use in this function)
+   15 |         Config = XUartPs_LookupConfig(DeviceId);
+      |                                       ^~~~~~~~
+../src/helloworld.c:15:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:16:31: error: 'UartInstPtr' undeclared (first use in this function)
+   16 |         XUartPs_CfgInitialize(UartInstPtr, Config, Config->BaseAddress);
+      |                               ^~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+
+15:52:35 Build Finished (took 318ms)
+

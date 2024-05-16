@@ -1,0 +1,25 @@
+10:21:23 **** Incremental Build of configuration Debug for project rw_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/rw.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702_advanced/bram/export/bram/sw/bram/standalone_domain/bspinclude/include -MMD -MP -MF"src/rw.d" -MT"src/rw.o" -o "src/rw.o" "../src/rw.c"
+'Finished building: ../src/rw.c'
+' '
+'Building target: rw_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702_advanced/bram/export/bram/sw/bram/standalone_domain/bsplib/lib -o "rw_test.elf"  ./src/platform.o ./src/rw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rw_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rw_test.elf  |tee "rw_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22897	   1144	  22568	  46609	   b611	rw_test.elf
+'Finished building: rw_test.elf.size'
+' '
+
+10:21:24 Build Finished (took 609ms)
+

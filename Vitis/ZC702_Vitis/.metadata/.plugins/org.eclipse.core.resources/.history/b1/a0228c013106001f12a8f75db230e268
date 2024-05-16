@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xgpiops.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "sleep.h"
+
+#define GPIO_DEVICE_ID		XPAR_XGPIOPS_0_DEVICE_ID
+
+XGpioPs Gpio;
+XGpioPs_Config *ConfigPtr;
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}

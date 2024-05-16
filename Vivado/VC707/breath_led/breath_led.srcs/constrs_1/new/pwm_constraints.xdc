@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN E19 [get_ports clk]
+set_property PACKAGE_PIN AM39 [get_ports led]
+set_property PACKAGE_PIN AR40 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS18 [get_ports clk]
+set_property IOSTANDARD LVCMOS18 [get_ports led]
+set_property IOSTANDARD LVCMOS18 [get_ports rst_n]

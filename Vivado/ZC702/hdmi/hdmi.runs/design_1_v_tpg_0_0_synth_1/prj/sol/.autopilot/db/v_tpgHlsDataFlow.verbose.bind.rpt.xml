@@ -1,0 +1,53 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'v_tpgHlsDataFlow'" level="0">
+<item name = "Date">Fri Mar  1 09:43:11 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.73 ns, 7.209 ns, 1.82 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">35, 4296671206, 0.252 us, 30.975 sec, 3, 4296671207, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_tpgBackground_fu_494">tpgBackground, 1, 4296671206, 7.209 ns, 30.975 sec, 1, 4296671206, no</column>
+<column name="call_ln0_entry_proc_fu_612">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret8_v_tpgHlsDataFlow_Block_entry36_proc_fu_649">v_tpgHlsDataFlow_Block_entry36_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_tpgForeground_fu_655">tpgForeground, 2, 4295229437, 13.468 ns, 28.924 sec, 2, 4295229437, no</column>
+<column name="grp_v_hcresampler_core_fu_686">v_hcresampler_core, 2, 1073971194, 13.468 ns, 7.232 sec, 2, 1073971194, no</column>
+<column name="bPassThru_1_loc_channel_v_tpgHlsDataFlow_Block_entry38_proc_fu_697">v_tpgHlsDataFlow_Block_entry38_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_v_vcresampler_core_fu_702">v_vcresampler_core, 2, 1073938427, 13.468 ns, 7.232 sec, 2, 1073938427, no</column>
+<column name="grp_MultiPixStream2AXIvideo_fu_713">MultiPixStream2AXIvideo, 1, 8860321, 6.734 ns, 59.665 ms, 1, 8860321, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

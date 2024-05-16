@@ -1,0 +1,12 @@
+/* C:/Users/User/AppData/Local/Temp/bootgen_breathLed_system12524559826402514991/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*custom_led*/
+the_ROM_image:
+{
+ [bootloader] C:/vi/z702/custom_led/export/custom_led/sw/custom_led/boot/fsbl.elf
+ C:/vi/z702/breathLed/_ide/bitstream/design_1_wrapper.bit
+ C:/vi/z702/breathLed/Debug/breathLed.elf
+}

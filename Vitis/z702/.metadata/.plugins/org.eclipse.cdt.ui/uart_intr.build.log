@@ -1,0 +1,61 @@
+11:01:11 **** Incremental Build of configuration Debug for project uart_intr ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:8: warning: "UART_DEVICE_ID" redefined
+    8 | #define UART_DEVICE_ID          XPAR_XUARTPS_0_DEVICE_ID
+      | 
+In file included from ../src/platform.h:10,
+                 from ../src/helloworld.c:2:
+../src/platform_config.h:5: note: this is the location of the previous definition
+    5 | #define UART_DEVICE_ID 0
+      | 
+In file included from C:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bspinclude/include/xuartps.h:169,
+                 from ../src/helloworld.c:4:
+../src/helloworld.c: In function 'uart_init':
+C:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bspinclude/include/xstatus.h:45:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   45 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/helloworld.c:34:24: note: in expansion of macro 'XST_FAILURE'
+   34 |                 return XST_FAILURE;
+      |                        ^~~~~~~~~~~
+../src/helloworld.c:25:6: note: declared here
+   25 | void uart_init(XUartPs *UartInstPtr,u16 DeviceId){
+      |      ^~~~~~~~~
+C:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bspinclude/include/xstatus.h:45:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   45 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/helloworld.c:39:24: note: in expansion of macro 'XST_FAILURE'
+   39 |                 return XST_FAILURE;
+      |                        ^~~~~~~~~~~
+../src/helloworld.c:25:6: note: declared here
+   25 | void uart_init(XUartPs *UartInstPtr,u16 DeviceId){
+      |      ^~~~~~~~~
+C:/vi/z702/uart1/export/uart1/sw/uart1/standalone_domain/bspinclude/include/xstatus.h:44:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   44 | #define XST_SUCCESS                     0L
+      |                                         ^~
+../src/helloworld.c:44:16: note: in expansion of macro 'XST_SUCCESS'
+   44 |         return XST_SUCCESS;
+      |                ^~~~~~~~~~~
+../src/helloworld.c:25:6: note: declared here
+   25 | void uart_init(XUartPs *UartInstPtr,u16 DeviceId){
+      |      ^~~~~~~~~
+../src/helloworld.c: In function 'Handler':
+../src/helloworld.c:95:33: error: 'UartInstPtr' undeclared (first use in this function)
+   95 |         rec_data = XUartPs_Recv(UartInstPtr, RecvBuffer,TEST_BUFFER_SIZE);
+      |                                 ^~~~~~~~~~~
+../src/helloworld.c:95:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: At top level:
+../src/helloworld.c:14:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+   14 | static u8 SendBuffer[TEST_BUFFER_SIZE]; /* Buffer for Transmitting Data */
+      |           ^~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+
+11:01:11 Build Finished (took 727ms)
+

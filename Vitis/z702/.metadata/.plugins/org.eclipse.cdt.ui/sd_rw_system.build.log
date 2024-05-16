@@ -1,0 +1,9 @@
+15:07:12 **** Incremental Build of configuration Debug for project sd_rw_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62525 C:/vi/z702/sd_card/export/sd_card/sd_card.xpfm standalone_domain C:/vi/z702/sd_rw_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702/sd_card/export/sd_card/sd_card.xpfm --sys_config sd_card --bif C:/vi/z702/sd_rw_system/Debug/system.bif --no_bitstream --elf C:/vi/z702/sd_rw/Debug/sd_rw.elf,ps7_cortexa9_0
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/vi/z702/sd_rw_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:07:16 Build Finished (took 4s.420ms)
+

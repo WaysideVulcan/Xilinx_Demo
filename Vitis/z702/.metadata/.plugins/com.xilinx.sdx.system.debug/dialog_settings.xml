@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="plgp_intr_system-imgFile" value="C:/vi/z702/plgp_intr_system/_ide/bootimage/BOOT.bin"/>
+	<item key="plgp_intr_system-offSet" value=""/>
+	<item key="plgp_intr_system-initFile" value="C:/vi/z702/axi_gpio/export/axi_gpio/sw/axi_gpio/boot/fsbl.elf"/>
+	<item key="plgp_intr_system-flashType" value="qspi-x4-single"/>
+	<item key="plgp_intr_system-verifyFlash" value="false"/>
+	<item key="plgp_intr_system-blankCheck" value="false"/>
+	<item key="plgp_intr_system-device" value="Auto Detect"/>
+	<item key="plgp_intr_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="hello_world_system"/>
+	<item key="breathLed_system-imgFile" value="C:/vi/z702/breathLed_system/_ide/bootimage/BOOT.bin"/>
+	<item key="breathLed_system-offSet" value=""/>
+	<item key="breathLed_system-initFile" value="C:/vi/z702/custom_led/export/custom_led/sw/custom_led/boot/fsbl.elf"/>
+	<item key="breathLed_system-flashType" value="qspi-x4-single"/>
+	<item key="breathLed_system-verifyFlash" value="false"/>
+	<item key="breathLed_system-blankCheck" value="false"/>
+	<item key="breathLed_system-device" value="Auto Detect"/>
+	<item key="breathLed_system-target" value="Local"/>
+	<item key="hello_world_system-imgFile" value="C:/vi/z702/hello_world_system/_ide/bootimage/BOOT.bin"/>
+	<item key="hello_world_system-offSet" value=""/>
+	<item key="hello_world_system-initFile" value="C:/vi/z702/12121/export/12121/sw/12121/boot/fsbl.elf"/>
+	<item key="hello_world_system-flashType" value="qspi-x4-single"/>
+	<item key="hello_world_system-verifyFlash" value="false"/>
+	<item key="hello_world_system-blankCheck" value="false"/>
+	<item key="hello_world_system-device" value="Auto Detect"/>
+	<item key="hello_world_system-target" value="Local"/>
+</section>

@@ -1,0 +1,37 @@
+22:13:14 **** Build of configuration Debug for project ps_intr ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/ps_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include -MMD -MP -MF"src/ps_intr.d" -MT"src/ps_intr.o" -o "src/ps_intr.o" "../src/ps_intr.c"
+In file included from ../src/ps_intr.c:6:
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include/xbasic_types.h:102:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+  102 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bspinclude/include/xbasic_types.h:103:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+  103 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/ps_intr.c'
+' '
+'Building target: ps_intr.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Vulcan/Design_Tool/Vitis/ZC702_Vitis/zc702_irq/export/zc702_irq/sw/zc702_irq/standalone_domain/bsplib/lib -o "ps_intr.elf"  ./src/platform.o ./src/ps_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ps_intr.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ps_intr.elf  |tee "ps_intr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61163	   3336	  22712	  87211	  154ab	ps_intr.elf
+'Finished building: ps_intr.elf.size'
+' '
+
+22:13:15 Build Finished (took 779ms)
+

@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1714267339,verilog,,C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,blk_mem_gen_0,,,../../../../fir.ip_user_files/ipstatic,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1714268357,verilog,,C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sources_1/new/fir_top.v,,clk_wiz_0,,,../../../../fir.ip_user_files/ipstatic,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1714268357,verilog,,C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../fir.ip_user_files/ipstatic,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.gen/sources_1/ip/fir_compiler_0/sim/fir_compiler_0.vhd,1714267142,vhdl,,,,fir_compiler_0,,,,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sim_1/new/fit_top_tb.v,1714268785,verilog,,,,fit_top_tb,,,../../../../fir.ip_user_files/ipstatic,,,,,
+C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sources_1/new/fir_top.v,1714268460,verilog,,C:/Vulcan/Design_Tool/Vivado/VC707/fir/fir.srcs/sim_1/new/fit_top_tb.v,,fir_top,,,../../../../fir.ip_user_files/ipstatic,,,,,

@@ -1,0 +1,16 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../breath_led.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../breath_led.gen/sources_1/bd/design_1/ipshared/6b2b/hdl" --include "../../../../breath_led.gen/sources_1/bd/design_1/ipshared/e2ba/hdl/verilog" --include "../../../../breath_led.gen/sources_1/bd/design_1/ipshared/a29c/hdl/verilog" --include "../../../../breath_led.gen/sources_1/bd/design_1/ipshared/ae90/hdl/verilog" --include "../../../../breath_led.gen/sources_1/bd/design_1/ipshared/0e59/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ipshared/c5b1/hdl/axiled_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/c5b1/hdl/breath_led.v" \
+"../../../bd/design_1/ipshared/c5b1/hdl/axiled_v1_0.v" \
+"../../../bd/design_1/ip/design_1_axiled_0_0/sim/design_1_axiled_0_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/sim/bd_36cd.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/sim/bd_36cd_ila_lib_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/sim/design_1_system_ila_0_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

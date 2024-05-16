@@ -1,0 +1,10 @@
+14:45:55 **** Build of configuration Debug for project uart_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 52871 C:/vi/z702/emio/export/emio/emio.xpfm standalone_domain C:/vi/z702/uart_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702/emio/export/emio/emio.xpfm --sys_config emio --bif C:/vi/z702/uart_system/Debug/system.bif --bitstream C:/vi/z702/uart/_ide/bitstream/design_1_wrapper.bit --elf C:/vi/z702/uart/Debug/uart.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/vi/z702/uart/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image C:/vi/z702/uart_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:46:00 Build Finished (took 4s.353ms)
+

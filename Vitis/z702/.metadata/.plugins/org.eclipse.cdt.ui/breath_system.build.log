@@ -1,0 +1,10 @@
+15:16:25 **** Incremental Build of configuration Debug for project breath_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 60026 C:/vi/z702/custom_led/export/custom_led/custom_led.xpfm standalone_domain C:/vi/z702/breath_system/Debug/system.bif
+sdcard_gen --xpfm C:/vi/z702/custom_led/export/custom_led/custom_led.xpfm --sys_config custom_led --bif C:/vi/z702/breath_system/Debug/system.bif --bitstream C:/vi/z702/breath/_ide/bitstream/design_1_wrapper.bit --elf C:/vi/z702/breath/Debug/breath.elf,ps7_cortexa9_0
+ELF does not exist: C:/vi/z702/breath/Debug/breath.elf
+make: *** [makefile:37: package] Error 1
+
+15:16:27 Build Finished (took 2s.696ms)
+

@@ -1,0 +1,25 @@
+00:11:51 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/dma_rw.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_rw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/vi/z702_advanced/dma/export/dma/sw/dma/standalone_domain/bspinclude/include -MMD -MP -MF"src/dma_rw.d" -MT"src/dma_rw.o" -o "src/dma_rw.o" "../src/dma_rw.c"
+'Finished building: ../src/dma_rw.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/vi/z702_advanced/dma/export/dma/sw/dma/standalone_domain/bsplib/lib -o "dma_test.elf"  ./src/dma_rw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39891	   3024	  24552	  67467	  1078b	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+
+00:11:53 Build Finished (took 1s.623ms)
+
