@@ -10,4 +10,4 @@
 | Vitis_HLS | HLS支援使用 C . C++ 為FPGA設計RTL IP，此項目示範基礎的操作及優化流程。 |
 | PYNQ | PYNQ使用Python來設計ZYNQ系列Device，此項目包含基礎操作並演示Xilinx提供的範例。 |
 | Configuration | 詳細介紹Xilinx的FPGA開機配置與順序。 |
-| Board_Demo | 使用Xilinx的開發版展示各種Demo項目。 |
+
